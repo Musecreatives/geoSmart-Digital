@@ -1,0 +1,54 @@
+.main_container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main_container p {
+    font-size: .9rem;
+}
+
+.main_container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main_container .inputs_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px dashed #9747FF;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_group input {
+    margin-top: 10px;
+    height: 43px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    outline: none;
+    padding: 0 10px;
+}
+
+.input_group textarea {
+    border: 1px solid #000000;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #191D1F;
+    color: white;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

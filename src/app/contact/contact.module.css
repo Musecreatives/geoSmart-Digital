@@ -1,0 +1,68 @@
+.main_container header {
+    color: white;
+    position: relative; 
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../../../public/assets/imgs/contact.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+    position: relative; 
+    z-index: 2;
+}
+
+.main_container header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.heading_content {
+    z-index: 99999;
+    text-align: center;
+}
+
+.main_container header h1 {
+    font-weight: 900;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_container header p {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    width: 45%;
+    align-items: center;
+}
+
+.form_and_map_container {
+    margin-top: 60px;
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.form_content {
+    width: 50%;
+}
+
+.map_content {
+    width: 50%;
+}
+
+@media screen and (max-width: 710px) {
+    .form_and_map_container {
+        flex-direction: column !important;
+    }
+}

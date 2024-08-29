@@ -1,0 +1,37 @@
+.side_nav_wrapper {
+    width: 200px;
+    background-color: white;
+    box-shadow: 4px 1px 8px -3px rgba(0, 0, 0, 0.1);
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigation_wrapper {
+    padding-left: 25px;
+}
+
+.logout_btn_container {
+    border-top: 1px solid #E3E3E3;
+    width: 100%;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.logout_btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.btn_text {
+    padding-bottom: 4px;
+}

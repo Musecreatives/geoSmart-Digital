@@ -1,0 +1,75 @@
+.container {
+    width: 100%;
+    height: 600px;
+    background: url("../../../../public/assets/imgs/program-bg.png");
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    font-weight: 800;
+    color: white;
+}
+
+.program_table {
+    width: 75%;
+    min-height: 200px;
+    background-color: #2B5476;
+    position: absolute;
+    bottom: 0;
+    transform: translate(0%, 50%);
+    padding: 40px 40px;
+}
+
+.program_table {
+    display: flex;
+    justify-content: space-between;
+}
+
+.program {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.program li {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.title {
+    font-weight: 700;
+    color: rgb(213, 213, 213);
+}
+
+@media screen and (max-width: 1017px) {
+    .program {
+        width: fit-content;
+    }
+
+    .program li {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .program_table {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .program  {
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .program_table {
+        width: 90%;
+    }
+}

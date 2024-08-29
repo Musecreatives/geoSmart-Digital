@@ -1,0 +1,41 @@
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.container p {
+    margin-top: 10px;
+}
+
+.container ul {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.container ul li {
+    border: 1px solid #928C8C7A;
+    width: 240px;
+    border-radius: 10px;
+}
+
+.heading {
+    background-color: #2B5476;
+    color: white;
+    padding: 20px 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container ul li p {
+    font-size: .9rem;
+    padding: 20px 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .container ul li {
+        width: 100%;
+    }
+}

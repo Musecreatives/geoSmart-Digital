@@ -1,0 +1,399 @@
+.hero {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background: linear-gradient(90deg, #2B5476, #1C5237);
+}
+
+.boyOnLaptop {
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    user-select: none;
+    z-index: 1;
+}
+
+.heroMsg {
+    color: white;
+    width: 80%;
+    margin-left: 50px;
+    padding-top: 10%;
+    z-index: 99999 !important;
+    position: relative;
+}
+
+.heroMsg h1 {
+    font-size: 3.5rem;
+    width: 60%;
+}
+
+.heroMsg h2 {
+    margin-top: 16px;
+    width: 40%;
+}
+
+.heroMsg p {
+    margin-top: 16px;
+    font-size: .9rem;
+    width: 40%;
+}
+
+/* training and deplomas */
+.tandDContainer {
+    margin-top: 2em;
+}
+
+.title {
+    font-size: 2.2rem;
+    margin-left: 50px;
+    font-weight: 700;
+}
+
+.title span:first-of-type {
+    color: #2B5476;
+}
+
+.title span:last-of-type {
+    color: #D52027;
+}
+
+.tAndDCard {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.tAndDCard .card {
+    flex: 1 1 200px; /* grow, shrink, and minimum width */flex: 1 1 200px; /* grow, shrink, and minimum width */
+    height: 350px;
+}
+
+.programImg {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tAndDCard p {
+    margin-top: 7px;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.tAndDCard button {
+    margin-top: 7px;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 40px;
+    background-color: #2B5476;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* vision statement */
+.visionStatement {
+    background-color: #2B5476;
+    margin-top: 2em;
+    padding: 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.visionStatement .visionImg {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+.visionStatement p {
+    color: white;
+    margin-top: 10px;
+}
+
+/* why chose us */
+.whyChoseUsContainer {
+    margin-top: 3em;
+}
+
+.reasonsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    border-bottom: 1px solid #00000061;
+}
+
+.reasonsContainer li {
+    border-top: 1px solid #00000061;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.reasonText {
+    width: 50%;
+}
+
+/* partners */
+.partnersContainer {
+    margin-top: 3em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #00000061;
+}
+
+.partnerBrands {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.logo1 {
+    width: 80px;
+    height: 50px;
+    position: relative;
+}
+
+.logo2 {
+    width: 80px;
+    height: 40px;
+    position: relative;
+}
+
+.logo3 {
+    width: 80px;
+    height: 50px;
+    position: relative;
+}
+
+.logo4 {
+    width: 50px;
+    height: 40px;
+    position: relative;
+}
+
+.logo5 {
+    width: 50px;
+    height: 40px;
+    position: relative;
+}
+
+/* Testimonials */
+.testimonialsContainer {
+    margin-top: 2em;
+}
+
+
+.tHeading {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tHeading p {
+    margin-left: 50px;
+}
+
+.individualsWrapper {
+    margin-top: 2em;
+    background-color: #2B5476;
+    color: white;
+    text-align: center;
+    min-height: 400px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.testifier {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.testifierImg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.individualsWrapper p {
+    width: 200px;
+}
+
+/* call to action - apply now */
+.callToActionContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+.callToActionContainer h1 {
+    margin-top: 20px;
+}
+
+.callToActionContainer h3 {
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.applyNowBtn button {
+    font-size: 1rem;
+    font-weight: 500;
+    height: 40px;
+    padding: 0 17px;
+    background: #D52027;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 55px;
+    margin-left: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.callToActionContainer div:last-of-type {
+    margin-right: 200px;
+    width: 429px;
+    height: 394px;
+    position: relative;
+}
+
+@media screen and (max-width: 1168px) {
+    .heroMsg h1 {
+        font-size: 2.4rem !important;
+    }
+
+    .heroMsg h2 {
+        font-size: 1.3rem !important;
+        width: 60%;
+    }
+
+    .heroMsg p {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .hero {
+        height: 450px;
+    }
+    
+    .heroMsg h1 {
+        font-size: 2.4rem !important;
+        width: 100%;
+    }
+
+    .heroMsg h2 {
+        font-size: 1.3rem !important;
+        width: 100%;
+    }
+
+    .heroMsg p {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 1.8rem;
+        margin-left: 20px;
+    }
+
+    .tAndDCard {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .tAndDCard .card {
+        width: 180px;
+        height: 280px;
+    }
+
+    .programImg {
+        position: relative;
+        width: 100%;
+        height: 60%;
+    }
+
+    .reasonText {
+        width: 100%;
+    }
+
+    /* partners */
+    .partnerBrands {
+        padding: 0 20px;
+    }
+
+    .logo1 {
+        width: 60px;
+        height: 40px;
+    }
+
+    .logo2 {
+        width: 60px;
+        height: 30px;
+    }
+
+    .logo3 {
+        width: 60px;
+        height: 40px;
+    }
+
+    .logo4 {
+        width: 30px;
+        height: 30px;
+    }
+
+    .individualsWrapper {
+        /* width: 100vw; */
+        overflow-x: scroll;
+    }
+
+    .callToActionContainer {
+        flex-direction: column;
+    }
+
+    .applyNowBtn button {
+        margin-top: 20px;
+    }
+
+    .callToActionContainer div:last-of-type {
+        width: 300px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+    }
+
+    .ctaImg {
+        margin-top: 10px;
+    }
+}

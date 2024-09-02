@@ -124,7 +124,7 @@ const HomePage = () => {
                             return(<div className={styles.card} key={index}>
                                 {/* img */}
                                 <div className={styles.programImg}>
-                                    <Image src={program.img} fill/>
+                                    <Image src={program.img} alt={program.img} fill/>
                                 </div>
                                 {/* title */}
                                 <p>{program.program}</p>
@@ -196,7 +196,7 @@ const HomePage = () => {
                         <span>Testimonials</span>
                         <span></span>
                     </h1>
-                    <p>Don't just take our word for it! Hear from our satisfied clients."</p>
+                    <p>Don&apos;t just take our word for it! Hear from our satisfied clients.</p>
                 </div>
 
                 <div className={styles.individualsWrapper}>

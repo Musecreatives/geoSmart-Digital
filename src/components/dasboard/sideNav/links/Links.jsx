@@ -18,8 +18,8 @@ const Links = () => {
     
     return(
         <div className={styles.dashboard_nav_links}>
-            {paths.map(linkpath => {
-                return <Link href={linkpath.path} className={`${styles.link_item} ${pathname === linkpath.path && styles.active}`}>
+            {paths.map((linkpath, index) => {
+                return <Link key={index} href={linkpath.path} className={`${styles.link_item} ${pathname === linkpath.path && styles.active}`}>
                     <span><Image src={linkpath.icon} alt={linkpath.title}/></span>
                     <span>{linkpath.title}</span>
                 </Link>

@@ -35,7 +35,7 @@ const Footer = () => {
                         <div> <Link className={styles.link} href="/services">Service</Link></div>
                         <div> <Link className={styles.link} href="/validate">Verify Certificate</Link></div>
                         <div> <Link className={styles.link} href="/contact">Contact</Link></div>
-                        <div> <Link className={styles.link} href="/">Visit NCRS Main Website</Link></div>
+                        <div> <Link className={styles.link} href="ncrs.gov.ng">Visit NCRS Main Website</Link></div>
                     </div>
                 </div>
 

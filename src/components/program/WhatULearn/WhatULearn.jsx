@@ -7,7 +7,7 @@ const WhatYouLearn = (
 ) => {
     return(
         <div className={styles.container}>
-            <h2>What you'll learn</h2>
+            <h2>What you&apos;ll learn</h2>
             <p>Our Computer Networking Training program covers essential topics such as:</p>
             <ul>
                 {

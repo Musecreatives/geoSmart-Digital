@@ -12,17 +12,17 @@ import DropDownDark from "../../../public/assets/icons/dropdown-dark.png"
 
 const LandingPageNav = () => {
     const pathname = usePathname()
-    const [isDropdownOpen, useIsDropdownOpen] = useState(null)
+    const [isDropdownOpen, setuseIsDropdownOpen] = useState(null)
 
     const handleDropdown = (dropdown) => {
-        useIsDropdownOpen(current => current === dropdown ? null : dropdown)
+        setuseIsDropdownOpen(current => current === dropdown ? null : dropdown)
     }
 
     return (
         <div className={styles.container}>
             {/* logo */}
             <div className={styles.logo}>
-                <Image src={NcrsLogo} height={45} width={90} />
+                <Image src={NcrsLogo} alt={NcrsLogo} height={45} width={90} />
             </div>
             {/* line divider */}
             <div className={styles.lineDivider}></div>

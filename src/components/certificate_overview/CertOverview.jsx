@@ -9,9 +9,9 @@ const CertificateOverview = forwardRef(
     {
       checkBox = false,
       name = "Angela Okpifo",
-      acceptSatus = "Pending",
+      acceptStatus = "Pending",
       certId = "NCRS090234",
-      regDate = "9/112/2024",
+      regDate = "09/11/2024",
       status = "Active",
       uniqueKey,
       isMenuOpen,
@@ -19,10 +19,10 @@ const CertificateOverview = forwardRef(
     },
     ref
   ) => {
-    const [checked, useCheck] = useState(false);
+    const [checked, setChecked] = useState(false);
 
     const handleCheckBoxClick = () => {
-      useCheck((current) => !current);
+      setChecked((current) => !current);
     };
 
     useImperativeHandle(ref, () => ({
@@ -32,14 +32,14 @@ const CertificateOverview = forwardRef(
     return (
       <div className={`${styles.container} ${styles.certificateOverview}`}>
         {/* checkbox */}
-        {checkBox === true && (
+        {checkBox && (
           <div
             className={!checked ? styles.unchecked : styles.checked}
             onClick={handleCheckBoxClick}
           ></div>
         )}
         <span>{name}</span>
-        <span>{acceptSatus}</span>
+        <span>{acceptStatus}</span>
         <span>{certId}</span>
         <span>{regDate}</span>
         <span className={styles.activeStatus}>{status}</span>
@@ -59,5 +59,7 @@ const CertificateOverview = forwardRef(
     );
   }
 );
+
+CertificateOverview.displayName = "CertificateOverview";
 
 export default CertificateOverview;

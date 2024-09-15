@@ -35,7 +35,7 @@ const Footer = () => {
                         <div> <Link className={styles.link} href="/services">Service</Link></div>
                         <div> <Link className={styles.link} href="/validate">Verify Certificate</Link></div>
                         <div> <Link className={styles.link} href="/contact">Contact</Link></div>
-                        <div> <Link className={styles.link} href="ncrs.gov.ng">Visit NCRS Main Website</Link></div>
+                        <div> <Link className={styles.link} href="https://www.ncrs.gov.ng">Visit NCRS Main Website</Link></div>
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@ const Footer = () => {
                     <h4 className={styles.heading}>Email/Phone No.</h4>
                     <div className={styles.body}>
                         <div>geosmart.ncrs@gmail.com</div>
-                        <div>0910342343</div>
+                        <div>+2348035998585</div>
                     </div>
                 </div>
             </div>

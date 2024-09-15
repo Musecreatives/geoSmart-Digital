@@ -10,7 +10,7 @@ import WritingImg from "../../../public/assets/imgs/writing.png";
 const AboutPage = () => {
     return(
         <div className={styles.container}>
-            {/* hero section */}
+        {/* hero section */}
             <div className={styles.hero}>
                 <h1>About GeoSmart Digital Solutions</h1>
                 <p>At Geosmart Digital Solutions we empower individuals and organizations 

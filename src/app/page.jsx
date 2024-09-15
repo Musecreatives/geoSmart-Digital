@@ -101,8 +101,8 @@ const HomePage = () => {
                 {/* hero message */}
                 <div className={styles.heroMsg}>
                     <h1>GeoSmart digital Solutions</h1>
-                    <h2>Your premier destination for comprehensive training and consultancy services in Remote sensing/GIS and IT</h2>
-                    <p>At Geosmart Digital Solutions we empower individuals and organizations to harness the power of technology for informed decision-making and innovation</p>
+                    <p>Your premier destination for comprehensive training and consultancy services in Remote sensing/GIS and IT. 
+                        At Geosmart Digital Solutions we empower individuals and organizations to harness the power of technology for informed decision-making and innovation</p>
                 </div>
                 
                 {/* boy on laptop image */}
@@ -111,7 +111,7 @@ const HomePage = () => {
                 </div>
             </div>
 
-            {/* training and deplomas */}
+            {/* training and diplomas */}
             <div className={styles.tandDContainer}>
                 <h1 className={styles.title}>
                     <span>Training &</span>

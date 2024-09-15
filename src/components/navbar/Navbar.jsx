@@ -75,7 +75,7 @@ const LandingPageNav = () => {
                             isDropdownOpen == "d2" &&
                             <div className={styles.dropDown}>
                                 <div>
-                                    <Link href="/">Validate Certificate</Link>
+                                    <Link href="/validate">Validate Certificate</Link>
                                 </div>
                                 <div>
                                     <Link href="/register">Admin Portal</Link>

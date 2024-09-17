@@ -14,8 +14,7 @@ const RegistrationPage = () => {
       field_password_placehold="Enter unique password"
       field_password_title_two="Confirm password"
       field_password_placehold_two="Re-enter password"
-    //   TODO: Callback required
-      btn_btm_msg="Already have an account"
+      btn_btm_msg="Already have an account?"
       btn_btm_msg_link="/login"
     />
   );

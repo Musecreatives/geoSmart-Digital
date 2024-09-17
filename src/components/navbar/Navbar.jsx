@@ -17,8 +17,8 @@ const LandingPageNav = () => {
     const handleDropdown = (dropdown) => {
         setuseIsDropdownOpen(current => current === dropdown ? null : dropdown)
     }
-    
-    return(
+
+    return (
         <div className={styles.container}>
             {/* logo */}
             <div className={styles.logo}>
@@ -37,27 +37,26 @@ const LandingPageNav = () => {
                                 <span><Link href={"/"}>Programs</Link></span>
                                 {/* dropdown icon */}
                                 <span>
-                                    <Image src={DropDownDark}  alt="Program dropdown" height={10} width={10}/>
+                                    <Image src={DropDownDark} alt="Program dropdown" height={10} width={10} />
                                 </span>
                             </div>
-                            
                             {
-                                isDropdownOpen=="d1" &&
+                                isDropdownOpen == "d1" &&
                                 <div className={styles.dropDown}>
                                     <div>
-                                        <Link href="/computer-application" >Computer Application</Link>
+                                        <Link href="/computer-application">Computer Application</Link>
                                     </div>
                                     <div>
-                                        <Link href="/computer-maintainance" >Computer Maintainance</Link>
+                                        <Link href="/computer-maintainance">Computer Maintainance</Link>
                                     </div>
                                     <div>
-                                        <Link href="/computer-networking" >Computer Networking</Link>
+                                        <Link href="/computer-networking">Computer Networking</Link>
                                     </div>
                                     <div>
-                                        <Link href="/remote-sensing" >Remote Sensing and GIS</Link>
+                                        <Link href="/remote-sensing">Remote Sensing and GIS</Link>
                                     </div>
                                     <div>
-                                        <Link href="/software-engineering" >Software Engineering</Link>
+                                        <Link href="/software-engineering">Software Engineering</Link>
                                     </div>
                                 </div>
                             }
@@ -69,17 +68,17 @@ const LandingPageNav = () => {
                             <span><Link href={"/"}>Certificates</Link></span>
                             {/* dropdown icon */}
                             <span>
-                                <Image src={DropDownDark}  alt="Certificates dropdown" height={10} width={10}/>
+                                <Image src={DropDownDark} alt="Certificates dropdown" height={10} width={10} />
                             </span>
                         </div>
                         {
-                            isDropdownOpen=="d2" &&
+                            isDropdownOpen == "d2" &&
                             <div className={styles.dropDown}>
                                 <div>
-                                    <Link  href="/">Validate Certificate</Link>
+                                    <Link href="/validate">Validate Certificate</Link>
                                 </div>
                                 <div>
-                                    <Link  href="/">Admin portal</Link>
+                                    <Link href="/register">Admin Portal</Link>
                                 </div>
                             </div>
                         }

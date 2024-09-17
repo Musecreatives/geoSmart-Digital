@@ -22,8 +22,8 @@
 }
 
 .arrow_illustration_wrapper_bottom {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    bottom: -1.6em;
     left: 0;
 }
 

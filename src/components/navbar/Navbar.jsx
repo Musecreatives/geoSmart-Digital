@@ -1,94 +1,58 @@
-"use client"
+// components/Navbar.jsx
+'use client';
 
-import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-// styles
-import styles from "./Navbar.module.css";
-// images
-import NcrsLogo from "../../../public/assets/ncrs-logo.png"
-import DropDownDark from "../../../public/assets/icons/dropdown-dark.png"
+import { useState } from 'react';
+import Link from 'next/link';
+import styles from './Navbar.module.css'; // Import your CSS module
 
-const LandingPageNav = () => {
-    const pathname = usePathname()
-    const [isDropdownOpen, setuseIsDropdownOpen] = useState(null)
+const Navbar = () => {
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
 
-    const handleDropdown = (dropdown) => {
-        setuseIsDropdownOpen(current => current === dropdown ? null : dropdown)
-    }
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
 
-    return (
-        <div className={styles.container}>
-            {/* logo */}
-            <div className={styles.logo}>
-                <Image src={NcrsLogo} alt={NcrsLogo} height={45} width={90} />
-            </div>
-            {/* line divider */}
-            <div className={styles.lineDivider}></div>
-            {/* links container */}
-            <div className={styles.linkWrapper}>
-                <ul className={styles.navLink}>
-                    <li><Link className={`${pathname == "/" ? styles.active_link : styles.none_active}`} href={"/"}>Home</Link> </li>
-                    <li><Link className={`${pathname == "/about" ? styles.active_link : styles.none_active}`} href={"/about"}>About GeoSmart</Link> </li>
-                    <li className={styles.program_dropdown} onClick={() => handleDropdown("d1")}>
-                        <div className={styles.dropdownLinkWrapper}>
-                            <div className={styles.link}>
-                                <span><Link href={"/"}>Programs</Link></span>
-                                {/* dropdown icon */}
-                                <span>
-                                    <Image src={DropDownDark} alt="Program dropdown" height={10} width={10} />
-                                </span>
-                            </div>
-                            {
-                                isDropdownOpen == "d1" &&
-                                <div className={styles.dropDown}>
-                                    <div>
-                                        <Link href="/computer-application">Computer Application</Link>
-                                    </div>
-                                    <div>
-                                        <Link href="/computer-maintainance">Computer Maintainance</Link>
-                                    </div>
-                                    <div>
-                                        <Link href="/computer-networking">Computer Networking</Link>
-                                    </div>
-                                    <div>
-                                        <Link href="/remote-sensing">Remote Sensing and GIS</Link>
-                                    </div>
-                                    <div>
-                                        <Link href="/software-engineering">Software Engineering</Link>
-                                    </div>
-                                </div>
-                            }
-                        </div>
-                    </li>
-                    <li><Link href={"/"}>Services</Link></li>
-                    <li className={styles.program_dropdown} onClick={() => handleDropdown("d2")}>
-                        <div className={styles.link}>
-                            <span><Link href={"/"}>Certificates</Link></span>
-                            {/* dropdown icon */}
-                            <span>
-                                <Image src={DropDownDark} alt="Certificates dropdown" height={10} width={10} />
-                            </span>
-                        </div>
-                        {
-                            isDropdownOpen == "d2" &&
-                            <div className={styles.dropDown}>
-                                <div>
-                                    <Link href="/validate">Validate Certificate</Link>
-                                </div>
-                                <div>
-                                    <Link href="/register">Admin Portal</Link>
-                                </div>
-                            </div>
-                        }
-                    </li>
-                    <li><Link className={`${pathname == "/contact" ? styles.active_link : styles.none_active}`} href={"/contact"}>Contact</Link> </li>
-                </ul>
-                <button className={styles.applyBtn}>Apply Now</button>
-            </div>
-        </div>
-    );
-}
+  return (
+    <nav className={styles.navbar}>
+      <div className={styles.logo}>
+        <Link href="/">
+          <img src="/assets/ncrs-logo.png" alt="NCRS Logo" className={styles.logoImage} />
+        </Link>
+      </div>
 
-export default LandingPageNav;
+      <ul className={styles.navLinks}>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/about">About GeoSmart</Link>
+        </li>
+        <li className={styles.dropdown}>
+        <button onClick={toggleDropdown} className={styles.dropdownBtn}>
+            Programs <svg className={styles.arrowDown} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+  </svg>
+          </button>
+          {isDropdownOpen && (
+            <ul className={styles.dropdownContent}>
+              <li><Link href="/computer-application">Computer Application</Link></li>
+              <li><Link href="/computer-maintainance">Computer Maintainance</Link></li>
+              <li><Link href="/computer-Networking">Computer Networking</Link></li>
+              <li><Link href="/remote-sensing">Remote Sensing and GIS</Link></li>
+              <li><Link href="/software-engineering">Software Engineering</Link></li>
+            </ul>
+          )}
+        </li>
+        <li>
+          <Link href="/validate">Verify Certificate</Link>
+        </li>
+        <li>
+          <Link href="/contact">Contact Us  </Link>
+        </li>
+        <button className={styles.applyButton}>Apply Now</button>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;

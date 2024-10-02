@@ -1,3 +1,66 @@
+/* Styles for the slider container */
+.sliderContainer {
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 100%;
+}
+
+/* Individual slide styling */
+.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5; /* or a color that suits your design */
+}
+
+/* Slider text content */
+.slideContent {
+    max-width: 50%;
+}
+
+.sliderTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.sliderText {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Apply button styling */
+.applyBtn {
+    display: flex;
+    align-items: center;
+    background-color: #e63946; /* Same red color as in the screenshot */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.applyBtn:hover {
+    background-color: #d62828;
+}
+
+/* Arrow icon inside the button */
+.arrowIcon {
+    margin-left: 10px;
+}
+
+/* Image styling for slider */
+.sliderImage {
+    max-width: 50%;
+    position: relative;
+}
+
+
 .hero {
     width: 100%;
     height: 600px;
@@ -47,6 +110,8 @@
 }
 
 .title {
+    display: flex;
+    justify-content: center;
     font-size: 2.2rem;
     margin-left: 50px;
     font-weight: 700;
@@ -351,6 +416,12 @@
     .partnerBrands {
         padding: 0 20px;
     }
+      .testimonialsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
 
     .logo1 {
         width: 60px;

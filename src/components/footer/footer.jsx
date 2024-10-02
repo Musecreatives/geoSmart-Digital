@@ -32,9 +32,9 @@ const Footer = () => {
                     <h4 className={styles.heading}>Quick Links</h4>
                     <div className={styles.body}>
                         <div> <Link className={styles.link} href="/about" >About GeoSmart</Link></div>
-                        <div> <Link className={styles.link} href="/services">Service</Link></div>
+                        <div> <Link className={styles.link} href="/programs">Programs</Link></div>
                         <div> <Link className={styles.link} href="/validate">Verify Certificate</Link></div>
-                        <div> <Link className={styles.link} href="/contact">Contact</Link></div>
+                        <div> <Link className={styles.link} href="/contact">Contact Us</Link></div>
                         <div> <Link className={styles.link} href="https://www.ncrs.gov.ng">Visit NCRS Main Website</Link></div>
                     </div>
                 </div>

@@ -1,0 +1,79 @@
+/* components/HeroSlider.module.css */
+
+.heroSlider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  position: relative;
+  min-width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textContent {
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(255, 255, 255);
+  padding: 20px;
+  max-width: 400px;
+  left: 50px;
+}
+
+.textContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.textContent p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.applyNowBtn {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.imageContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.embla__buttonPrev, .embla__buttonNext {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.embla__buttonPrev {
+  left: 20px;
+}
+
+.embla__buttonNext {
+  right: 20px;
+}

@@ -11,10 +11,17 @@ const AboutPage = () => {
     return(
         <div className={styles.container}>
         {/* hero section */}
-            <div className={styles.hero}>
-                <h1>About GeoSmart Digital Solutions</h1>
+        <div className={styles.embla__container}>
+            <div className={styles.embla__slide}>
+            <div className={styles.textContent}>
+            <h1>About GeoSmart Digital Solutions</h1>
                 <p>At Geosmart Digital Solutions we empower individuals and organizations 
                 to harness the power of technology for informed decision-making and innovation</p>
+            </div>
+            <div className={styles.imageContent}>
+              <Image src="/assets/imgs/about_us_banner.jpg" alt="Slide 1" layout="fill" objectFit="cover" />
+            </div>
+          </div>
             </div>
 
             {/* mission and vision section */}

@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .imageWrapper {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .image {
+    border-radius: 40px;
+    border: 2px solid #0070f3; /* Blue border around the image */
+  }
+  
+  .content {
+    flex: 1;
+    padding-left: 2rem;
+  }
+  
+  .heading { /* Scoped class for the h3 tag */
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .description { /* Scoped class for the p tag */
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .applyButton {
+    background-color: #e63946; /* Red background */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .applyButton:hover {
+    background-color: #d62839;
+  }
+  

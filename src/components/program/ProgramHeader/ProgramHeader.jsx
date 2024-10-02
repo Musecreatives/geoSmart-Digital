@@ -5,11 +5,11 @@ import HeaderBg from "../../../../public/assets/imgs/program-bg.png";
 const ProgramHeader = (
     {
         bg=HeaderBg,
-        programTitle="Computer Programing",
+        programTitle="Software Programing",
         certificate="Training Prgram",
         fee="_______",
         duration="Flexible",
-        startDate="September 12, 2024",
+        startDate="_ _ _ _ _ _",
         location="Jos, Nigeria"
     }
 ) => {

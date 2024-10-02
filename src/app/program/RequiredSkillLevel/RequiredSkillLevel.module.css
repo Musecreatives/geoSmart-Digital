@@ -1,0 +1,28 @@
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.container ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container li {
+    background-color: #2B5476;
+    width: 32%;
+    padding: 20px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+    .container ul {
+        flex-direction: column;
+    }
+    
+    .container li {
+        width: 100%;
+    }
+}

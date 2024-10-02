@@ -1,3 +1,4 @@
+import Image from "next/image";
 // style
 import styles from "./contact.module.css";
 // component
@@ -17,7 +18,9 @@ const ContactPage = () => {
                 <div className={styles.form_content}>
                     <ContactForm />
                 </div>
-                <div className={styles.map_content}></div>
+                <div className={styles.map_content}>
+                    <Image src="/assets/imgs/map.jpg" alt="image" className={styles.map_img} fill/>
+                </div>
             </div>
         </main>
     );

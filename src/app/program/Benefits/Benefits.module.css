@@ -1,0 +1,44 @@
+.container {
+    background-color: #000;
+    color: white;
+    display: flex;
+}
+
+.text_content {
+    width: 60%;
+    padding: 34px 34px;
+}
+
+.text_content p {
+    margin-top: 10px;
+}
+
+.text_content ul {
+    margin-top: 30px;
+    background-color: #1C5237A3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 40px;
+}
+
+.text_content ul li {
+    list-style-type: circle !important;
+    font-size: .9rem;
+}
+
+.img_content {
+    position: relative;
+    width: 40%;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .img_container, .text_content {
+        width: 100%;
+    }
+}

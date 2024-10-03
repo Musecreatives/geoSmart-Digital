@@ -1,7 +1,6 @@
 'use client';
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Image from "next/image";
 import TrainingAndDiplomas from '../../src/components/TrainingAndDiplomas/TrainingAndDiplomas';
 import Testimonials from '../components/testimonial/Testimonial';

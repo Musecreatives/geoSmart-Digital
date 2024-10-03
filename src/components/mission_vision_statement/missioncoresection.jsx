@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "./MissionCore.module.css";
+import styles from "./missioncore.module.css";
 
 const MissionCoreSection = () => {
   const [isVisible, setIsVisible] = useState(false);

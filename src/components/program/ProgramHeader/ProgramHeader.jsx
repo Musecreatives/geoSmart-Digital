@@ -1,42 +1,59 @@
 import styles from "./ProgramHeader.module.css";
-// images
-import HeaderBg from "../../../../public/assets/imgs/program-bg.png";
+import Image from "next/image"; // Use for optimization if using an image element
 
-const ProgramHeader = (
-    {
-        bg=HeaderBg,
-        programTitle="Software Programing",
-        certificate="Training Prgram",
-        fee="_______",
-        duration="Flexible",
-        startDate="_ _ _ _ _ _",
-        location="Jos, Nigeria"
-    }
-) => {
-    const headerStyle = {
-        background: HeaderBg,
-    }
-    
-    return(
-        <div className={styles.container}>
-            {/* program title */}
-            <h1>{programTitle}</h1>
-            {/* program table */}
-            <div className={styles.program_table}>
-                <ul className={styles.program}>
-                    <li><span className={styles.title}>Program:</span> <span className={styles.desc}>{programTitle}</span></li>
-                    <li><span className={styles.title}>Certificate:</span> <span className={styles.desc}>{certificate}</span></li>
-                    <li><span className={styles.title}>Application Fee:</span> <span className={styles.desc}>{fee}</span></li>
-                </ul>
+const ProgramHeader = ({
+  bg, // New dynamic background prop
+  programTitle = "Software Programming",
+  certificate = "Training Program",
+  fee = "_______",
+  duration = "Flexible",
+  startDate = "_ _ _ _ _ _",
+  location = "Jos, Nigeria",
+}) => {
+  const headerStyle = {
+    backgroundImage: `url(${bg.src})`, // Use the 'src' property for dynamic backgrounds
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  };
 
-                <ul className={styles.program}>
-                    <li><span className={styles.title}>Program Length:</span> <span className={styles.desc}>{duration}</span></li>
-                    <li><span className={styles.title}>Start Date:</span> <span className={styles.desc}>{startDate}</span></li>
-                    <li><span className={styles.title}>Location:</span> <span className={styles.desc}>{location}</span></li>
-                </ul>
-            </div>
-        </div>
-    );
-}
+  return (
+    <div className={styles.container} style={headerStyle}>
+      {/* program title */}
+      <h1>{programTitle}</h1>
+      {/* program table */}
+      <div className={styles.program_table}>
+        <ul className={styles.program}>
+          <li>
+            <span className={styles.title}>Program:</span>{" "}
+            <span className={styles.desc}>{programTitle}</span>
+          </li>
+          <li>
+            <span className={styles.title}>Certificate:</span>{" "}
+            <span className={styles.desc}>{certificate}</span>
+          </li>
+          <li>
+            <span className={styles.title}>Application Fee:</span>{" "}
+            <span className={styles.desc}>{fee}</span>
+          </li>
+        </ul>
+
+        <ul className={styles.program}>
+          <li>
+            <span className={styles.title}>Program Length:</span>{" "}
+            <span className={styles.desc}>{duration}</span>
+          </li>
+          <li>
+            <span className={styles.title}>Start Date:</span>{" "}
+            <span className={styles.desc}>{startDate}</span>
+          </li>
+          <li>
+            <span className={styles.title}>Location:</span>{" "}
+            <span className={styles.desc}>{location}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
 export default ProgramHeader;

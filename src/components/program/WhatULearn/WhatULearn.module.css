@@ -17,7 +17,7 @@
 
 .container ul li {
     border: 1px solid #928C8C7A;
-    width: 240px;
+    width: 30%; /* This ensures that three cards fit in a row */
     border-radius: 10px;
 }
 
@@ -27,6 +27,9 @@
     padding: 20px 15px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between the icon and the title */
 }
 
 .container ul li p {
@@ -34,8 +37,14 @@
     padding: 20px 15px;
 }
 
+@media screen and (max-width: 768px) {
+    .container ul li {
+        width: 45%; /* Two cards in a row for tablet screens */
+    }
+}
+
 @media screen and (max-width: 480px) {
     .container ul li {
-        width: 100%;
+        width: 100%; /* One card in a row for mobile screens */
     }
 }

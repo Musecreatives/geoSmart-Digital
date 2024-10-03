@@ -6,28 +6,28 @@ import styles from './TrainingAndDiplomas.module.css';
 const trainingPrograms = [
    {
         title: "Computer Applications",
-        img: "/assets/imgs/computer-application.png",  // Use leading slash
-        link: "/programs/computer-applications",
+        img: "/assets/imgs/t&d1.png",  // Use leading slash
+        link: "/computer_application",
     },
     {
         title: "Computer Maintenance",
-        img: "/assets/imgs/computer-maintainance.png",  // Use leading slash
-        link: "/programs/computer-maintenance",
+        img: "/assets/imgs/t&d2.png",  // Use leading slash
+        link: "/computer_maintainance",
     },
     {
         title: "Computer Networking",
-        img: "/assets/imgs/computer-networking.png",  // Use leading slash
-        link: "/programs/computer-networking",
+        img: "/assets/imgs/t&d3.png",  // Use leading slash
+        link: "/computer_networking",
     },
     {
         title: "Remote Sensing/GIS",
-        img: "/assets/imgs/remote-sensing-gis.png",  // Use leading slash
-        link: "/programs/remote-sensing",
+        img: "/assets/imgs/t&d4.png",  // Use leading slash
+        link: "/remote_sensing",
     },
     {
         title: "Software Engineering",
-        img: "/assets/imgs/software-engineering.png",  // Use leading slash
-        link: "/programs/software-engineering",
+        img: "/assets/imgs/t&d5.png",  // Use leading slash
+        link: "/prsoftware-engineering",
     }
 ];
 

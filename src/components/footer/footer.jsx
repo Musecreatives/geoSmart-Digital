@@ -6,11 +6,11 @@ import styles from "./footer.module.css";
 import CircleLogo from "../../../public/assets/circle-logo.png";
 
 const Footer = () => {
-    return(
+    return (
         <div className={styles.main_container}>
             <div className={styles.links_container}>
                 <div className={styles.logo}>
-                    <Image src={CircleLogo} alt="Logo" fill/>
+                    <Image src={CircleLogo} alt="Logo" fill />
                 </div>
 
                 {/* visit */}
@@ -32,8 +32,17 @@ const Footer = () => {
                     <h4 className={styles.heading}>Quick Links</h4>
                     <div className={styles.body}>
                         <div> <Link className={styles.link} href="/about" >About GeoSmart</Link></div>
-                        <div> <Link className={styles.link} href="/programs">Programs</Link></div>
-                        <div> <Link className={styles.link} href="/validate">Verify Certificate</Link></div>
+                        <div> <Link className={styles.link} href="/computer_application" >
+                            Computer Application
+                        </Link></div>
+                        <div> <Link className={styles.link} href="/computer_maintainance" >
+                            Computer Maintainance
+                        </Link></div>
+                        <div> <Link className={styles.link} href="/computer_networking" >
+                            Computer Networking
+                        </Link></div>
+                        <div> <Link className={styles.link} href="/software-engineering">Software Engineering</Link></div>
+                        <div> <Link className={styles.link} href="/remote_sensing">Remote Sensing/GIS</Link></div>
                         <div> <Link className={styles.link} href="/contact">Contact Us</Link></div>
                         <div> <Link className={styles.link} href="https://www.ncrs.gov.ng">Visit NCRS Main Website</Link></div>
                     </div>

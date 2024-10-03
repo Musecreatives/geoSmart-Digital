@@ -1,0 +1,28 @@
+.contactInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+  }
+  
+  .textContainer {
+    font-size: 1rem;
+  }
+  
+  .email {
+    color: #D8435E; /* Change the color for email */
+    font-weight: bold;
+    text-decoration: none;
+  }
+  

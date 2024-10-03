@@ -5,7 +5,7 @@
 }
 
 .heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #223159;
     margin-bottom: 1.5rem;
@@ -29,6 +29,7 @@
     overflow: hidden;
     position: relative;
     transition: transform 0.3s ease-in-out;
+    height: 300px;
 }
 
 .programCard:hover {
@@ -57,5 +58,29 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+    width: 80%;
+    text-align: center;
 }
 
+/* Hover state */
+.learnMoreButton:hover {
+    background-color: #e94a3f; /* Change the button background color on hover */
+    color: #fff;
+}
+
+/* Active state */
+.learnMoreButton:active {
+    background-color: #d43a33; /* Slightly darker red for active state */
+    transform: scale(0.98); /* Slightly shrink the button on click */
+}
+
+/* Focus state */
+.learnMoreButton:focus {
+    outline: 2px solid #e94a3f; /* Outline the button when it receives focus */
+    outline-offset: 3px;
+}
+
+/* Optional: Visited state */
+.learnMoreButton:visited {
+    background-color: #223159; /* Same as default background for visited */
+}

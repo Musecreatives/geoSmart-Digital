@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {

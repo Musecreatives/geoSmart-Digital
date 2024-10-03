@@ -13,7 +13,7 @@ const ProgramBenefits = (
         <div className={styles.container}>
             <div className={styles.text_content}>
                 <h2>Benefits</h2>
-                <p>Prepare to become a Software Engineer</p>
+                <p>Prepare to become an Expert</p>
                 <ul>
                     {
                         array.map((content, index) => {

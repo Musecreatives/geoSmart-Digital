@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import styles from "./softwareEngineering.module.css"
 // components
 import ProgramHeader from "@/components/program/ProgramHeader/ProgramHeader";
@@ -5,8 +7,14 @@ import AboutProgram from "@/components/program/About/About";
 import WhoCanEnroll from "@/components/program/WhyEnroll/WhoCanEnrollWhoCanEnroll";
 import CoursesUnderProgram from "@/components/program/CoursesUnderProgram/CoursesUnderProgram";
 import ProgramBenefits from "@/components/program/Benefits/Benefits";
-import WhatYouLearn from "@/components/program/WhatULearn/WhatULearn";
 
+//images
+import icon1 from "../../../public/assets/icons/pg1.png";
+import icon2 from "../../../public/assets/icons/graduates.png";
+import icon3 from "../../../public/assets/icons/it_professional.png";
+import icon4 from "../../../public/assets/icons/entreprenuer.png";
+import icon5 from "../../../public/assets/icons/tech_enthusiast.png";
+import CustomBg from "../../../public/assets/imgs/software_engineering_bg.jpg";
 const SoftwareEngineeringPage = () => {
     const benefits = [
         "Acquire sought-after software development skills for diverse career opportunities.",
@@ -19,26 +27,30 @@ const SoftwareEngineeringPage = () => {
     ]
 
     const whoCanEnroll = [
-        "Career changers seeking a path into tech.",
-        "Recent graduates eager to apply their knowledge.",
-        "IT professionals aiming to specialize.",
-        "Entrepreneurs with software ambitions.",
-        "Tech enthusiasts curious about coding."
+        "      Career changers seeking a path into tech.",
+        "      Recent graduates eager to apply their knowledge.",
+        "       IT professionals aiming to specialize.",
+        "      Entrepreneurs with software ambitions.",
+        "       Tech enthusiasts curious about coding."
     ]
-    return(
+
+    const whoCanEnrollIcons = [icon1, icon2, icon3, icon4, icon5];
+    return (
         <main>
             {/* hero */}
-            <ProgramHeader />
+            <ProgramHeader
+                bg={CustomBg} 
+                />
             <div className={styles.spacing_300}></div>
-            <AboutProgram 
-                aboutParagraph="Our Computer Networking Training program is designed to equip you with the knowledge and skills needed to excel in the field of network engineering and administration. Whether you're a beginner looking to enter the industry or an experienced professional seeking to enhance your expertise, our comprehensive curriculum covers a wide range of networking concepts and technologies."
+            <AboutProgram
+                aboutParagraph="Our Software Engineering Training program is designed to equip you with the knowledge and expertise to excel in the fast-paced and dynamic field of software development."
             />
             <div className={styles.spacing_normal}></div>
-            <WhoCanEnroll array={whoCanEnroll}/>
+            <WhoCanEnroll array={whoCanEnroll} icons={whoCanEnrollIcons} />
             <div className={styles.spacing_normal}></div>
             <CoursesUnderProgram />
             <div className={styles.spacing_normal}></div>
-            <ProgramBenefits array={benefits}/>
+            <ProgramBenefits array={benefits} />
         </main>
     )
 }

@@ -1,17 +1,25 @@
 import styles from "./WhoCanEnroll.module.css";
-
-const WhoCanEnroll = (
-    {
-        array
-    }
-) => {
-    return(
+import Image from "next/image";
+const WhoCanEnroll = ({ array, icons }) => {
+    return (
         <div className={styles.container}>
             <h3>Who Should Enroll?</h3>
             <ul className={styles.reasons}>
-                {
-                    array.map((content, index) => <li key={index}>{content}</li>)
-                }
+                {array.map((content, index) => (
+                    <div key={index} className={styles.listItem}>
+                        {/* Render the icon next to each content */}
+                        {icons && icons[index] && (
+                            <Image
+                                src={icons[index]}
+                                alt={`Icon for ${content}`}
+                                width={18}
+                                height={18}
+                                className={styles.icon}
+                            />
+                        )}
+                        {content}
+                    </div>
+                ))}
             </ul>
         </div>
     )

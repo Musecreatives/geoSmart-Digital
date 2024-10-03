@@ -2,6 +2,8 @@ import LandingPageNav from "@/components/navbar/Navbar";
 import { Poppins } from "next/font/google";
 // styles
 import "./globals.css";
+import 'leaflet/dist/leaflet.css';
+
 // logic
 import ControlLayout from "../logic/ControlLayout";
 import Footer from "@/components/footer/footer";

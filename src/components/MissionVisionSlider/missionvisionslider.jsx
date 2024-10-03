@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import styles from './MissionVisionSlider.module.css'; // Ensure you create a corresponding CSS file
+import styles from './missionvisionslider.module.css'; // Ensure you create a corresponding CSS file
 
 const MissionVisionSlider = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, speed: 4, draggable: true });

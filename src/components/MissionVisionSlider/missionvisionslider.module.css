@@ -1,0 +1,44 @@
+.embla {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .embla__container {
+    display: flex;
+  }
+  
+  .embla__slide {
+    min-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #2B5476;
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card {
+      padding: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card {
+      padding: 15px;
+    }
+  }
+  

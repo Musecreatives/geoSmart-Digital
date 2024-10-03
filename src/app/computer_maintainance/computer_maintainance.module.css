@@ -43,4 +43,12 @@
     .text_content {
         margin-top: 10px;
     }
+
+    .img_content {
+        width: 100%; /* Reduce image height on smaller screens */
+    }
+
+    .text_content {
+        margin-top: 10px;
+    }
 }

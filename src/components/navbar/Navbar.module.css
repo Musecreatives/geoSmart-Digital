@@ -105,7 +105,7 @@
     
   .applyButton {
     margin-left: 20px;
-    background-color: #e63946; /* Red background */
+    background-color: black; /* Black background */
     color: white;
     padding: 0.7rem 1.5rem;
     border: none;
@@ -131,7 +131,7 @@
 /* When a link is active, e.g., the current page */
 .navLinks a.active {
   color: #f90808; /* Active link color */
-  font-weight: 700; /* Bold the active link */
+  font-weight: 600; /* Bold the active link */
 }
 
 

@@ -27,6 +27,7 @@
 .heading_content {
     z-index: 2;
     text-align: center;
+    padding: 0 20px; /* Adding padding for better mobile experience */
 }
 
 .main_container header h1 {
@@ -34,6 +35,7 @@
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    font-size: 2rem; /* Scalable font for all screen sizes */
 }
 
 .main_container header p {
@@ -42,6 +44,7 @@
     padding-top: 10px;
     width: 45%;
     align-items: center;
+    font-size: 1.1rem; /* Scalable font */
 }
 
 .form_and_map_container {
@@ -55,21 +58,56 @@
 .form_content, .map_content {
     width: 50%;
     min-height: 600px; /* Ensure both form and map have the same height */
-}
-
-.map_content {
-    position: relative;
+    position: relative; /* To ensure content positions properly */
     z-index: 1;
 }
 
+@media screen and (max-width: 1024px) {
+    .main_container header h1 {
+        font-size: 1.75rem;
+    }
+
+    .main_container header p {
+        width: 60%; /* Adjusting width for better readability */
+        font-size: 1rem;
+    }
+
+    .form_content, .map_content {
+        min-height: 450px; /* Adjust the height for medium-sized screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main_container header h1 {
+        font-size: 1.5rem;
+    }
+
+    .main_container header p {
+        width: 70%; /* Further adjusting for smaller screens */
+        font-size: 0.95rem;
+    }
+
+    .form_content, .map_content {
+        min-height: 400px;
+    }
+}
 
 @media screen and (max-width: 710px) {
     .form_and_map_container {
         flex-direction: column !important;
     }
 
+    .main_container header h1 {
+        font-size: 1.25rem; /* Reduce the font size */
+    }
+
+    .main_container header p {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
     .form_content, .map_content {
         width: 100%;
-        min-height: 300px; /* Adjust this for smaller screens if needed */
+        min-height: 300px; /* Adjust this for smaller screens */
     }
 }

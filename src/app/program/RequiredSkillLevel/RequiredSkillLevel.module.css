@@ -7,18 +7,31 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    gap: 20px; /* Add gap to space out items */
 }
 
 .container li {
     background-color: #2B5476;
     width: 32%;
-    padding: 20px 20px;
+    padding: 20px;
     font-size: 1.2rem;
     font-weight: 500;
     color: white;
     border: none;
     border-radius: 25px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Add smooth transition */
+}
+
+.container li:hover {
+    transform: translateY(-10px); /* Slight hover effect */
+    background-color: #1E3B55; /* Darken background color on hover */
+}
+
+@media screen and (max-width: 860px) {
+    .container li {
+        width: 48%; /* Adjust to fit 2 items per row on medium screens */
+    }
 }
 
 @media screen and (max-width: 600px) {

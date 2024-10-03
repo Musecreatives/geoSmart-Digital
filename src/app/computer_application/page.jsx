@@ -32,11 +32,11 @@ const ComputerApplication = () => {
 
 
     const benefits = [
-        " Comprehensive curriculum",
-        " Hands-on learning",
-        " Expert Instruction",
-        " Flexible Learning options",
-        "Earn a diploma certificate",
+        "    Comprehensive curriculum",
+        "    Hands-on learning",
+        "    Expert Instruction",
+        "    Flexible Learning options",
+        "    Earn a diploma certificate",
     ]
 
     const coverageIcons = [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8];
@@ -52,7 +52,7 @@ const ComputerApplication = () => {
             <div className={styles.spacing_300}></div>
             <div className={styles.container}>
             <div className={styles.img_content} style={{borderRadius: '20px', overflow: 'hidden' }}>
-                <Image src="/assets/imgs/computer_application.jpg" alt="About program" fill/>
+                <Image src="/assets/imgs/computer_applications.jpg" alt="About program" fill/>
             </div>
             <div className={styles.text_content}>
                 <h2>About the program</h2>

@@ -1,0 +1,56 @@
+.missionCoreContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+  }
+  
+  .missionCoreContainer.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .missionStatement, .coreValues {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    flex-basis: 48%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .missionStatement h2, .coreValues h2 {
+    font-size: 1.8rem;
+    color: #00a6d1;
+    margin-bottom: 20px;
+  }
+  
+  .missionStatement p, .coreValues p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .listContainer {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .listContainer li {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .missionStatement:hover, .coreValues:hover {
+    transform: scale(1.05);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .missionCoreContainer {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  

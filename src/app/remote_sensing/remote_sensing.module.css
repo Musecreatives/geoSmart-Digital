@@ -45,4 +45,11 @@
     .text_content {
         margin-top: 10px;
     }
+    .text_content {
+        margin-top: 10px;
+    }
+
+    .img_content {
+        width: 100%!important; /* Reduce image height on smaller screens */
+    }
 }

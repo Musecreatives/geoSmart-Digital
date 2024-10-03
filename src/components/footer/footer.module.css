@@ -9,35 +9,86 @@
     background-color: #2B5476;
     color: white;
     width: 100%;
-    padding: 50px 50px;
+    padding: 50px; /* Use a single value to maintain consistent padding */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 45px;
 }
 
+/* Logo styles */
 .logo {
     height: 80px;
     width: 80px;
     position: relative;
 }
 
+/* Body styles */
 .body {
     margin-top: 1em;
-    font-size: .9rem;
+    font-size: 0.9rem;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+/* Link styles */
 .link {
     color: white;
 }
 
+/* Location styles */
 .location {
     width: 150px;
 }
 
+/* Copyright styles */
 .copyrigt {
     padding: 5px 0;
+}
+
+/* Responsive Design */
+
+/* Tablet Devices */
+@media (max-width: 768px) {
+    .links_container {
+        padding: 30px; /* Reduce padding for tablets */
+        justify-content: center; /* Center links on smaller screens */
+    }
+
+    .location {
+        text-align: left; /* Center text for better alignment */
+    }
+
+    .logo {
+        height: 60px; /* Adjust logo size */
+        width: 60px;
+    }
+
+    .body {
+        font-size: 0.85rem; /* Slightly reduce font size */
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+    .links_container {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: left; /* Center align items */
+        row-gap: 30px; /* Adjust row gap for mobile */
+    }
+
+    .link {
+        text-align: center; /* Center align links */
+    }
+
+
+    .copyrigt {
+        font-size: 0.8rem; /* Adjust copyright font size */
+    }
+
+    .logo {
+        height: 50px; /* Further reduce logo size */
+        width: 50px;
+    }
 }

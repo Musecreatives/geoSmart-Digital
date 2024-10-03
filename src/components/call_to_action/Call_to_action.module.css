@@ -1,50 +1,89 @@
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.imageWrapper {
+  flex: 1;
+  padding-right: 2rem;
+  min-width: 250px; /* Minimum width for the image wrapper */
+}
+
+.image {
+  border-radius: 40px;
+  border: 2px solid #0070f3; /* Blue border around the image */
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.content {
+  flex: 1;
+  padding-left: 2rem;
+  min-width: 250px; /* Minimum width for the content */
+}
+
+.heading { /* Scoped class for the h3 tag */
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.description { /* Scoped class for the p tag */
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.applyButton {
+  background-color: #e63946; /* Red background */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.applyButton:hover {
+  background-color: #d62839;
+}
+
+/* Responsive Design */
+
+/* Tablet Devices */
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column; /* Stack items vertically on tablets */
+    align-items: center; /* Center align items */
   }
-  
+
   .imageWrapper {
-    flex: 1;
-    padding-right: 2rem;
+    padding-right: 0; /* Remove right padding on smaller screens */
+    margin-bottom: 1rem; /* Add space below the image wrapper */
   }
-  
-  .image {
-    border-radius: 40px;
-    border: 2px solid #0070f3; /* Blue border around the image */
-  }
-  
+
   .content {
-    flex: 1;
-    padding-left: 2rem;
+    padding-left: 0; /* Remove left padding on smaller screens */
   }
-  
-  .heading { /* Scoped class for the h3 tag */
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 1rem;
+}
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+  .heading {
+    font-size: 1.25rem; /* Adjust heading size for smaller screens */
   }
-  
-  .description { /* Scoped class for the p tag */
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1.5rem;
+
+  .description {
+    font-size: 0.9rem; /* Adjust description size for smaller screens */
   }
-  
+
   .applyButton {
-    background-color: #e63946; /* Red background */
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 0.5rem 1rem; /* Smaller padding for the button on mobile */
+    font-size: 0.9rem; /* Adjust button font size */
   }
-  
-  .applyButton:hover {
-    background-color: #d62839;
-  }
-  
+}

@@ -1,28 +1,61 @@
 .contactInfo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; /* Add margin for spacing between items on smaller screens */
+  width: calc(50% - 1rem); /* Each item takes up 50% width on larger screens */
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+}
+
+.textContainer {
+  font-size: 1rem;
+}
+
+.email {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
   .contactItem {
-    display: flex;
-    align-items: center;
+      width: 100%; /* On smaller screens, each item takes up full width */
+      justify-content: flex-start; /* Align items to the left */
   }
-  
-  .icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 1rem;
-  }
-  
+
   .textContainer {
-    font-size: 1rem;
+      font-size: 0.9rem; /* Slightly reduce font size for smaller screens */
   }
-  
-  .email {
-    color: #D8435E; /* Change the color for email */
-    font-weight: bold;
-    text-decoration: none;
+
+  .icon {
+      width: 35px; /* Adjust icon size */
+      height: 35px;
   }
-  
+}
+
+@media screen and (max-width: 480px) {
+  .contactItem {
+      flex-direction: column; /* Stack the icon and text vertically */
+      align-items: flex-start; /* Align items to the start */
+  }
+
+  .icon {
+      margin-right: 0;
+      margin-bottom: 0.5rem; /* Space between icon and text when stacked */
+  }
+
+  .textContainer {
+      font-size: 0.85rem; /* Further reduce font size for smaller screens */
+  }
+}

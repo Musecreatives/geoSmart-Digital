@@ -4,29 +4,50 @@ import styles from "./Benefits.module.css";
 // image
 import ManOnLaptopImage from "../../../../public/assets/imgs/man-on-laptop.png";
 
-const ProgramBenefits = (
-    {
-        array
-    }
-) => {
-    return(
-        <div className={styles.container}>
-            <div className={styles.text_content}>
-                <h2>Benefits</h2>
-                <p>Prepare to become an Expert</p>
-                <ul>
-                    {
-                        array.map((content, index) => {
-                            return <li key={index}>{content}</li>
-                        })
-                    }
-                </ul>
-            </div>
-            <div className={styles.img_content}>
-                <Image src={ManOnLaptopImage} alt="Man on laptop" fill/>
-            </div>
-        </div>
-    )
-}
+const ProgramBenefits = () => {
+  const benefits = [
+    "Comprehensive curriculum",
+    "Hands-on learning",
+    "Expert instruction",
+    "Flexible learning options",
+    "Earn a diploma certificate",
+  ];
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.text_content}>
+        <h2>Benefits</h2>
+        <p>Prepare to become a Software Engineer</p>
+        <ul>
+          {benefits.map((content, index) => {
+            return (
+              <li key={index}>
+                <span className={styles.checkIcon}>
+                  {/* SVG Checkmark */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    width="1em"
+                    height="1em"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M13.78 3.22a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-3.5-3.5a.75.75 0 111.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"
+                    />
+                  </svg>
+                </span>
+                {content}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      <div className={styles.img_content}>
+        <Image src={ManOnLaptopImage} alt="Man on laptop" fill />
+      </div>
+    </div>
+  );
+};
 
 export default ProgramBenefits;

@@ -10,6 +10,10 @@
     .spacing_300 {
         margin-top: 260px;
     }
+
+    .spacing_normal {
+        margin-top: 70px; /* Reduced margin for smaller screens */
+    }
 }
 
 .container {
@@ -17,31 +21,41 @@
     gap: 40px;
     width: 85%;
     margin: auto;
+    justify-content: space-between; /* Added for better alignment */
 }
 
 .img_content {
-    width: 150%;
+    width: 100%; /* Adjusted to ensure responsive behavior */
     height: 280px;
     background-color: antiquewhite;
     position: relative;
 }
 
 .text_content {
-    padding: .8rem;
+    padding: 0.8rem;
     margin-top: 40px;
 }
 
 .text_content p {
     margin-top: 15px;
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
 
 @media screen and (max-width: 860px) {
     .container {
         flex-direction: column;
+        gap: 20px; /* Reduced gap for smaller screens */
     }
 
     .text_content {
         margin-top: 10px;
+    }
+
+    .img_content {
+        height: 200px; /* Reduce image height on smaller screens */
+    }
+
+    .text_content p {
+        font-size: 0.85rem; /* Adjust font size for readability on smaller screens */
     }
 }

@@ -1,5 +1,5 @@
 // components/HeroSlider.jsx
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import styles from './hero_slider.module.css';
@@ -13,6 +13,19 @@ const HeroSlider = () => {
 
   const scrollNext = useCallback(() => {
     if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
+  // Auto-slider functionality
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    // Set interval for auto-scroll every 5 seconds
+    const autoScroll = setInterval(() => {
+      emblaApi.scrollNext();
+    }, 5000); // 5000ms = 5 seconds
+
+    // Clear the interval when the component is unmounted
+    return () => clearInterval(autoScroll);
   }, [emblaApi]);
 
   return (

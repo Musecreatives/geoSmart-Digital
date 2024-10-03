@@ -1,5 +1,6 @@
-
 'use client';
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import TrainingAndDiplomas from '../../src/components/TrainingAndDiplomas/TrainingAndDiplomas';
@@ -10,48 +11,92 @@ import HeroSlider from '../components/hero_slider/hero_slider';
 // styles
 import styles from "./home.module.css";
 // img
-
 import NasaLogo from "../../public/assets/icons/NASA.png";
 import NGLogo from "../../public/assets/icons/coatofarm.png";
 import NcrsLogo from "../../public/assets/brands/ncrs.png";
 import SpaceXLogo from "../../public/assets/brands/spacex.png";
 
-
-
 const HomePage = () => {
+    const [visible, setVisible] = useState(false);
 
+    useEffect(() => {
+        setTimeout(() => {
+            setVisible(true);
+        }, 200); // Delayed for smoother entry
+    }, []);
 
     return (
-        <div className={styles.container}>
+        <motion.div 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 0.8 }}
+        >
             {/* hero section */}
-            <HeroSlider/>
+            <HeroSlider />
             {/* training and diplomas */}
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.8 }}
+            >
+                <TrainingAndDiplomas />
+            </motion.div>
 
-            <TrainingAndDiplomas />
             {/* why chose us */}
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+            >
+                <WhyChooseUs />
+            </motion.div>
 
-            <WhyChooseUs />
             {/* partners */}
-
-            <div className={styles.partnersContainer}>
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7, duration: 0.8 }}
+                className={`${styles.partnersContainer} ${visible ? 'visible' : ''}`}
+            >
                 <h1 className={styles.title}>
                     <span>Our Partners</span>
                     <span></span>
                 </h1>
                 <ul className={styles.partnerBrands}>
-                    <li className={styles.logo1}><Image src={NcrsLogo} alt="NCRS Logo" fill /></li>
-                    <li className={styles.logo2}><Image src={SpaceXLogo} alt="SpaceX Logo" fill /></li>
-                    <li className={styles.logo4}><Image src={NasaLogo} alt="Nasa Logo" fill /></li>
-                    <li className={styles.logo5}><Image src={NGLogo} alt="Nigeria Logo" fill /></li>
+                    <motion.li whileHover={{ scale: 1.1 }} className={styles.logo1}>
+                        <Image src={NcrsLogo} alt="NCRS Logo" width={150} height={100} />
+                    </motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }} className={styles.logo2}>
+                        <Image src={SpaceXLogo} alt="SpaceX Logo" width={150} height={100} />
+                    </motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }} className={styles.logo4}>
+                        <Image src={NasaLogo} alt="Nasa Logo" width={150} height={100} />
+                    </motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }} className={styles.logo5}>
+                        <Image src={NGLogo} alt="Nigeria Logo" width={150} height={100} />
+                    </motion.li>
                 </ul>
-            </div>
+            </motion.div>
 
             {/* testimonials */}
-            <Testimonials />
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.9, duration: 2 }}
+            >
+                <Testimonials />
+            </motion.div>
+
             {/* get started - call to action */}
-            <CallToActionSection />
-        </div>
-    )
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.1, duration: 2 }}
+            >
+                <CallToActionSection />
+            </motion.div>
+        </motion.div>
+    );
 }
 
 export default HomePage;

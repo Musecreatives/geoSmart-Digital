@@ -24,8 +24,12 @@
 }
 
 .text_content ul li {
-    list-style-type: circle !important;
     font-size: .9rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px; /* Adds spacing between the icon and the text */
 }
 
 .img_content {
@@ -41,4 +45,9 @@
     .img_container, .text_content {
         width: 100%;
     }
+    .checkIcon {
+        color: #2ecc71; /* You can choose a color that suits your theme */
+        font-size: 1rem; 
+}
+
 }

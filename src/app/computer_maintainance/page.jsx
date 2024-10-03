@@ -89,7 +89,7 @@ const computermaintainance = () => {
             </div>
             <div className={styles.text_content}>
                 <h2>About the program</h2>
-                <p>Our comprehensive Computer Hardware and Maintenance Training program is designed to provide you with the knowledge and skills needed to excel in the field of computer hardware installation, maintenance, and troubleshooting leading to a Diploma in Computer Maintenance. Whether you're a beginner with a passion for technology or an experienced professional seeking to expand your expertise, our program offers hands-on training and practical experience to help you succeed.</p>
+                <p>Our comprehensive Computer Hardware and Maintenance Training program is designed to provide you with the knowledge and skills needed to excel in the field of computer hardware installation, maintenance, and troubleshooting leading to a Diploma in Computer Maintenance. Whether you&apos;re a beginner with a passion for technology or an experienced professional seeking to expand your expertise, our program offers hands-on training and practical experience to help you succeed.</p>
             </div>
         </div>
             <div className={styles.spacing_normal}></div>

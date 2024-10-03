@@ -23,6 +23,7 @@ const markerIcon = new L.Icon({
     popupAnchor: [0, -46],
 });
 
+
 const ContactPage = () => {
     const [isClient, setIsClient] = useState(false); // State to check if on client-side
     const position = [9.8965, 8.8583]; // Latitude and longitude of Jos, Plateau State, Nigeria

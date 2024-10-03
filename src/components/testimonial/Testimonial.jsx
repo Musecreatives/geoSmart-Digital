@@ -21,7 +21,7 @@ const Testimonials = () => {
     <div className={styles.container}>
       <h2 className={styles.heading}>Testimonials</h2>
       <p className={styles.subheading}>
-        Don't just take our word for it! Hear from our satisfied clients.
+        Don&apos;t just take our word for it! Hear from our satisfied clients.
       </p>
       
       <div className={styles.testimonialsContainer}>

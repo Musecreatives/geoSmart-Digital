@@ -52,11 +52,11 @@ const ComputerApplication = () => {
             <div className={styles.spacing_300}></div>
             <div className={styles.container}>
             <div className={styles.img_content} style={{borderRadius: '20px', overflow: 'hidden' }}>
-                <Image src="/assets/imgs/computer_applications.jpg" alt="About program" fill/>
+                <Image src="/assets/imgs/computer_application.jpg" alt="About program" fill/>
             </div>
             <div className={styles.text_content}>
                 <h2>About the program</h2>
-                <p>This comprehensive 3-month program is designed to provide participants with a solid foundation in essential computer skills, coupled with proficiency in the Microsoft Office suite. By the end of the program, graduates will receive a diploma certificate in computer applications, equipping them with the knowledge and credentials needed to succeed in today's technology-driven landscape.</p>
+                <p>This comprehensive 3-month program is designed to provide participants with a solid foundation in essential computer skills, coupled with proficiency in the Microsoft Office suite. By the end of the program, graduates will receive a diploma certificate in computer applications, equipping them with the knowledge and credentials needed to succeed in today&apos;s technology-driven landscape.</p>
             </div>
         </div>
             <div className={styles.spacing_normal}></div>

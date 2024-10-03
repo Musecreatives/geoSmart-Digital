@@ -1,5 +1,5 @@
 // src/components/WhyChooseUs.jsx
-import styles from './WhyChooseUs.module.css';
+import styles from './whychooseus.module.css';
 import Image from 'next/image';
 
 const WhyChooseUs = () => {

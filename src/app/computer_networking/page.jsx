@@ -104,7 +104,7 @@ const computernetworking = () => {
             </div>
             <div className={styles.text_content}>
                 <h2>About the program</h2>
-                <p>Our Computer Networking Training program is designed to equip you with the knowledge and skills needed to excel in the field of network engineering and administration. Whether you're a beginner looking to enter the industry or an experienced professional seeking to enhance your expertise, our comprehensive curriculum covers a wide range of networking concepts and technologies.</p>
+                <p>Our Computer Networking Training program is designed to equip you with the knowledge and skills needed to excel in the field of network engineering and administration. Whether you&apos;re a beginner looking to enter the industry or an experienced professional seeking to enhance your expertise, our comprehensive curriculum covers a wide range of networking concepts and technologies.</p>
             </div>
         </div>
             <div className={styles.spacing_normal}></div>

@@ -5,7 +5,7 @@ import Image from "next/image";
 import TrainingAndDiplomas from '../../src/components/TrainingAndDiplomas/TrainingAndDiplomas';
 import Testimonials from '../components/testimonial/Testimonial';
 import CallToActionSection from '../components/call_to_action/Call_to_Action';
-import WhyChooseUs from '../components/WhyChooseUs/WhyChooseUs';
+import WhyChooseUs from '../components/Whychooseus/whychooseus';
 import HeroSlider from '../components/hero_slider/hero_slider';
 // styles
 import styles from "./home.module.css";

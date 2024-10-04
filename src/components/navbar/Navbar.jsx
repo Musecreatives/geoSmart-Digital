@@ -74,8 +74,10 @@ const Navbar = () => {
           )}
         </li>
         <li>
-          <Link href="/contact" className={pathname === "/contact" ? styles.active : ""} onClick={closeDropdown}>Contact Us  </Link>
+          <Link href="/contact" className={pathname === "/contact" ? styles.active : ""} onClick={closeDropdown}>Contact Us</Link>
         </li>
+        <li> <Link className={styles.link} href="/validate">Verify Certificate</Link></li>
+        
         <button className={styles.applyButton}>Apply Now</button>
       </ul>
     </nav>

@@ -43,6 +43,7 @@ const Footer = () => {
                         </Link></div>
                         <div> <Link className={styles.link} href="/software-engineering">Software Engineering</Link></div>
                         <div> <Link className={styles.link} href="/remote_sensing">Remote Sensing/GIS</Link></div>
+                        <div> <Link className={styles.link} href="/validate">Verify Certificate</Link></div>
                         <div> <Link className={styles.link} href="/contact">Contact Us</Link></div>
                         <div> <Link className={styles.link} href="https://www.ncrs.gov.ng">Visit NCRS Main Website</Link></div>
                     </div>

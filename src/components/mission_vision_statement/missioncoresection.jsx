@@ -54,7 +54,7 @@ const MissionVisionSection = () => {
             </p>
           </div>
           <div className={styles.imageWrapper}>
-            <Image src={VisionImage} alt="Vision Image" className={styles.image} />
+            <Image src={VisionImage} alt="Vision Image" width="350px!important" height="300px!important" className={styles.image} />
           </div>
         </div>
       </section>

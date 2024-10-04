@@ -7,7 +7,7 @@ const CallToActionSection = () => {
     <div className={styles.container}>
       <div className={styles.imageWrapper}>
         <Image
-          src="/assets/imgs/calltoaction.png"
+          src="/assets/imgs/calltoaction.jpg"
           alt="GeoSmart Digital Solutions Team"
           width={500}
           height={300}

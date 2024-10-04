@@ -105,7 +105,6 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
-            
             {/* Mission and Vision */}
             {/* <MissionVisionSlider /> */}
         </div>

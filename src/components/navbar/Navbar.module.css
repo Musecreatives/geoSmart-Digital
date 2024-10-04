@@ -121,7 +121,7 @@
 
   /* Hover effect */
 .navLinks a:hover {
-  color: #e63946; /* Change color on hover */
+  color: #D52027; /* Change color on hover */
 }
 
 /* Active/visited link styles */
@@ -130,12 +130,12 @@
 
 /* When a link is active, e.g., the current page */
 .navLinks a.active {
-  color: #f90808; /* Active link color */
+  color: #D52027; /* Active link color */
   font-weight: 600; /* Bold the active link */
 }
 
 
 .navLinks a:focus {
   outline: none;
-  border-bottom: 2px solid #e63946; /* Underline the link on focus */
+  border-bottom: 2px solid #D52027; /* Underline the link on focus */
 }

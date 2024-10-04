@@ -30,7 +30,7 @@
 }
 
 .container li:hover {
-    background-color: #ff0000; /* Darken background color on hover */
+    transform: translateY(-10px); /* Darken background color on hover */
 }
 
 @media screen and (max-width: 860px) {

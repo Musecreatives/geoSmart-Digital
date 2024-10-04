@@ -30,14 +30,15 @@ const MissionVisionSection = () => {
       {/* Mission Section */}
       <section className={`${styles.section} ${isVisible ? styles.fadeUp : ""}`}>
         <div className={styles.contentWrapper}>
+          <div className={styles.textWrapper}>
+            <h2 className={styles.heading}>Our Mission Statement</h2>
+            <p className={styles.description}>
+              Figma ipsum component variant main layer. Select connection flows edit fill. Layer horizontal line scale mask. Pen italic flatten list figjam main. Move flatten blur text boolean object distribute main horizontal. Polygon rotate plugin ipsum opacity group layout.
+              Thumbnail export blur style mask. Figjam editor create union duplicate project arrange pen plugin reesizing. Flatten hand duplicate font star strikethrough object device editor. Horizontal inspect link style auto. Strikethrough object image follower star. Duplicate export main horizontal rectangle shadow. Draft distribute underline style undo fill team flatten. Figjam figma device bullet.
+            </p>
+          </div>
           <div className={styles.imageWrapper}>
             <Image src={MissionImage} alt="Mission Image" className={styles.image} />
-          </div>
-          <div className={styles.textWrapper}>
-            <h2 className={styles.heading}>Our Mission</h2>
-            <p className={styles.description}>
-              Our mission is to provide cutting-edge solutions to foster growth and digital transformation across industries, ensuring that businesses can reach their full potential in the digital age.
-            </p>
           </div>
         </div>
       </section>
@@ -45,14 +46,15 @@ const MissionVisionSection = () => {
       {/* Vision Section */}
       <section className={`${styles.section} ${isVisible ? styles.fadeUp : ""}`}>
         <div className={`${styles.contentWrapper} ${styles.reverse}`}>
-        <div className={styles.imageWrapper}>
-            <Image src={VisionImage} alt="Vision Image" className={styles.image} />
-          </div>
-          <div className={styles.textWrapper}>
-            <h2 className={styles.heading}>Our Vision</h2>
+        <div className={styles.textWrapper}>
+            <h2 className={styles.heading}>Our Vision Statement</h2>
             <p className={styles.description}>
-              To be a global leader in IT consultancy and digital transformation by delivering innovative solutions that empower organizations to thrive in the digital world.
+              Figma ipsum component variant main layer. Select connection flows edit fill. Layer horizontal line scale mask. Pen italic flatten list figjam main. Move flatten blur text boolean object distribute main horizontal. Polygon rotate plugin ipsum opacity group layout.
+              Thumbnail export blur style mask. Figjam editor create union duplicate project arrange pen plugin reesizing. Flatten hand duplicate font star strikethrough object device editor. Horizontal inspect link style auto. Strikethrough object image follower star. Duplicate export main horizontal rectangle shadow. Draft distribute underline style undo fill team flatten. Figjam figma device bullet.
             </p>
+          </div>
+          <div className={styles.imageWrapper}>
+            <Image src={VisionImage} alt="Vision Image" className={styles.image} />
           </div>
         </div>
       </section>

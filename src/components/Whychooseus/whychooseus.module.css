@@ -35,15 +35,10 @@
 }
 
 .reasonCard:hover {
-  background-color: rgb(207, 25, 25);
-  color: white;
+  transform: translateY(-10px);
 }
 
-.reasonCard:hover .reasonTitle,
-.reasonCard:hover .reasonDescription,
-.reasonCard:hover .icon {
-  color: white;
-}
+
 
 .iconWrapper {
   margin-bottom: 1rem;

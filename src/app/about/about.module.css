@@ -196,7 +196,7 @@
 .readMoreBtn:hover {
   background-color: white; /* Change to white on hover */
   color: #d52027; /* Change text color to red */
-  border: 2px solid #d52027; /* Add red border */
+  border: 2px solid #000000; /* Add red border */
 }
 
 /* Click effect */

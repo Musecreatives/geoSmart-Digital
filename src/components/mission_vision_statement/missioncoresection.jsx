@@ -1,58 +1,63 @@
+"use client";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import styles from "./missioncore.module.css";
 
-const MissionCoreSection = () => {
+//images
+import MissionImage from "../../../public/assets/imgs/mission_image.jpg";
+import VisionImage from "../../../public/assets/imgs/vision_image.jpg";
+
+const MissionVisionSection = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const section = document.getElementById("mission-core-section");
-      const rect = section.getBoundingClientRect();
-      if (rect.top < window.innerHeight) {
+      const top = window.scrollY;
+      if (top > 300) {
         setIsVisible(true);
       }
     };
+
     window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <div
-      id="mission-core-section"
-      className={`${styles.missionCoreContainer} ${isVisible ? styles.visible : ""}`}
-    >
-      <div className={styles.missionStatement}>
-        <h2>Our Mission Statement</h2>
-        <p>
-          Provide cost-effective, high-quality innovative solutions & services, powered by state-of-the-art technologies, anchored on our basic principles of:
-        </p>
-        <ul className={styles.listContainer}>
-          <li>Explore</li>
-          <li>Innovate</li>
-          <li>Improve</li>
-        </ul>
-        <p>
-          The strong R&D team of Broad Height is constantly working to upgrade existing solutions and develop new products. Broad Height is transparent and accountable to customers, shareholders, partners, and employees and strives to deliver on commitments and results.
-        </p>
-      </div>
-      <div className={styles.coreValues}>
-        <h2>Our Core Values & Philosophy</h2>
-        <p>
-          Broad Height respects and seeks to maintain the highest standards of fairness, equality, integrity, and honesty. Our corporate philosophy is:
-        </p>
-        <ul className={styles.listContainer}>
-          <li>Total customer satisfaction, continuous improvement, and total involvement.</li>
-          <li>Constantly and consistently deliver products and services of the highest quality.</li>
-          <li>Keep pace with change and continuously strive for innovation while keeping in step with modern technology and methodology.</li>
-        </ul>
-        <p>
-          Our core value centers on total customer satisfaction and a quest toward ensuring good corporate citizenship.
-        </p>
-      </div>
-    </div>
+    <>
+      {/* Mission Section */}
+      <section className={`${styles.section} ${isVisible ? styles.fadeUp : ""}`}>
+        <div className={styles.contentWrapper}>
+          <div className={styles.imageWrapper}>
+            <Image src={MissionImage} alt="Mission Image" className={styles.image} />
+          </div>
+          <div className={styles.textWrapper}>
+            <h2 className={styles.heading}>Our Mission</h2>
+            <p className={styles.description}>
+              Our mission is to provide cutting-edge solutions to foster growth and digital transformation across industries, ensuring that businesses can reach their full potential in the digital age.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Vision Section */}
+      <section className={`${styles.section} ${isVisible ? styles.fadeUp : ""}`}>
+        <div className={`${styles.contentWrapper} ${styles.reverse}`}>
+        <div className={styles.imageWrapper}>
+            <Image src={VisionImage} alt="Vision Image" className={styles.image} />
+          </div>
+          <div className={styles.textWrapper}>
+            <h2 className={styles.heading}>Our Vision</h2>
+            <p className={styles.description}>
+              To be a global leader in IT consultancy and digital transformation by delivering innovative solutions that empower organizations to thrive in the digital world.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
-export default MissionCoreSection;
+export default MissionVisionSection;

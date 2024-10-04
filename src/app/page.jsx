@@ -85,7 +85,6 @@ const HomePage = () => {
             >
                 <Testimonials />
             </motion.div>
-
             {/* get started - call to action */}
             <motion.div
                 initial={{ opacity: 0, y: 50 }}

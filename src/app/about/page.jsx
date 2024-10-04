@@ -10,8 +10,7 @@ import MissionVisionSlider from "../../components/MissionVisionSlider/missionvis
 import MissionCoreSection from "../../components/mission_vision_statement/missioncoresection";
 // images
 import ManagerImg from "../../../public/assets/imgs/manager-photo.png";
-import BulbImg from "../../../public/assets/imgs/bulb.png";
-import WritingImg from "../../../public/assets/imgs/writing.png";
+import WhyChooseImage from "../../../public/assets/imgs/whychooseus.jpg";
 
 const AboutPage = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -73,9 +72,23 @@ const AboutPage = () => {
                     ))}
                 </div>
             </div>
-
-            {/* Mission and Vision */}
-            <MissionVisionSlider />
+             {/* Why Choose Geosmart Section */}
+      <section className={styles.sectionGeo}>
+        <div className={styles.contentWrapperGeo}>
+          <div className={styles.imageWrapperGeo}>
+            <Image src={WhyChooseImage} alt="Why Choose GeoSmart Digital" className={styles.imageGeo} />
+            <Image src={WhyChooseImage} alt="Why Choose GeoSmart Digital" className={styles.imageGeo2} />
+          </div>
+          <div className={styles.textWrapperGeo}>
+            <h2 className={styles.headingGeo}>Why Choose GeoSmart Digital</h2>
+            <p className={styles.descriptionGeo}>
+              Our mission is to provide cutting-edge solutions to foster growth and digital transformation across industries, ensuring that businesses can reach their full potential in the digital age.
+            </p>
+          </div>
+        </div>
+      </section>
+            {/* vission and mission statement */}
+            <MissionCoreSection />
             {/* manager section */}
             <div className={styles.managerContainer}>
                 <div className={styles.managerImgContainer}>
@@ -86,15 +99,15 @@ const AboutPage = () => {
                         <h2>Dr. Kehinde Ogunmola</h2>
                         <p>Manager, GeoSmart Digitals</p>
                     </div>
-                    <p className={styles.desc}>Frontend engineering is the art of creating visually appealing and user-friendly interfaces for web applications. In our Frontend Engineering course, you will learn the fundamentals of HTML, CSS, and JavaScript, along with modern frameworks like React and Angular.</p>
+                    <p className={styles.desc}>Our management team consists of experienced professionals who lead with innovation, dedication, and expertise. With a deep understanding of both the industry and emerging technologies, they drive our strategic vision and ensure the delivery of high-quality solutions that meet the evolving needs of our clients. Each team member is committed to fostering a culture of excellence, collaboration, and continuous improvement within the organization.</p>
                     <div className={styles.readMoreBtn}>
                         <span>Read More</span>
                     </div>
                 </div>
             </div>
-
-            {/* vission and mission statement */}
-            <MissionCoreSection />
+            
+            {/* Mission and Vision */}
+            {/* <MissionVisionSlider /> */}
         </div>
     );
 };

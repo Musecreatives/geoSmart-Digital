@@ -138,8 +138,8 @@
 /* manager section  */
 .managerContainer {
   display: flex;
-  /* padding-top: 30px; */
-  margin-top: 40px;
+  padding-top: 30px;
+  margin-top: 60px;
   background-color: #102333;
 }
 
@@ -271,5 +271,72 @@
 
   .heading {
     width: 100% !important;
+  }
+}
+
+
+/* whychoose geosmart section*/
+.sectionGeo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem 6rem;
+  background-color: #102333;
+}
+
+.contentWrapperGeo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+}
+
+.textWrapperGeo {
+  flex: 1;
+}
+
+.imageWrapperGeo {
+  flex: 1;
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.imageGeo {
+  border-radius: 5px;
+  object-fit: cover;
+  height: 75%;
+  width: 60%;
+}
+
+.imageGeo2 {
+  border-radius: 5px;
+  object-fit: cover;
+  height: 80%;
+  width: 60%;
+  position: relative;
+  bottom: 180px;
+  left: 40%;
+
+}
+.headingGeo {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.descriptionGeo {
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .contentWrapperGeo {
+    flex-direction: column;
+  }
+
+  .reverse {
+    flex-direction: column;
   }
 }

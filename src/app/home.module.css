@@ -81,17 +81,6 @@
     background: linear-gradient(90deg, #2B5476, #1C5237);
 }
 
-.boyOnLaptop {
-    height: 400px;
-    width: 300px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    user-select: none;
-    z-index: 1;
-}
-
 .heroMsg {
     color: white;
     width: 80%;
@@ -232,8 +221,7 @@
 /* partners */
 .partnersContainer {
     margin-top: 3em;
-    padding-bottom: 2em;
-    border-bottom: 1px solid #00000061;
+    padding-bottom: 6em;
     text-align: center;
   }
   

@@ -1,56 +1,70 @@
-.missionCoreContainer {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 40px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.6s ease;
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  margin: 2rem 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.contentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+}
+
+.textWrapper {
+  flex: 1;
+}
+
+.imageWrapper {
+  flex: 1;
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.image {
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #555;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Animation */
+.fadeUp {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .contentWrapper {
+    flex-direction: column;
   }
-  
-  .missionCoreContainer.visible {
-    opacity: 1;
-    transform: translateY(0);
+
+  .reverse {
+    flex-direction: column;
   }
-  
-  .missionStatement, .coreValues {
-    background-color: #f0f0f0;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    flex-basis: 48%;
-    transition: transform 0.4s ease-in-out;
+
+  .image {
+    flex: 1;
+    position: relative;
+    height: 200px;
+    width: 100%;
   }
-  
-  .missionStatement h2, .coreValues h2 {
-    font-size: 1.8rem;
-    color: #00a6d1;
-    margin-bottom: 20px;
-  }
-  
-  .missionStatement p, .coreValues p {
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  .listContainer {
-    list-style-type: none;
-    padding-left: 20px;
-  }
-  
-  .listContainer li {
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  .missionStatement:hover, .coreValues:hover {
-    transform: scale(1.05);
-  }
-  
-  @media screen and (max-width: 768px) {
-    .missionCoreContainer {
-      flex-direction: column;
-      gap: 30px;
-    }
-  }
-  
+}

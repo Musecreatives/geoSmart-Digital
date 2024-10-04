@@ -8,13 +8,13 @@ const testimonials = [
     name: 'Katy Jane',
     title: 'Student Developer',
     image: '/assets/imgs/review_1.jpg',
-    feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.\nAliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.',
+    feedback: 'A great experience! The team at Geosmart helped me level\nup my skills in GIS and web development. The support has been amazing, and I learned so much.',
   },
   {
     name: 'Thomas Waje',
     title: 'Student Developer',
     image: '/assets/imgs/review_2.png',
-    feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\nUt et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.',
+    feedback: 'Excellent Service!!\nThe team at Geosmart helped me level\nup my skills in GIS and web development. The support has been amazing, and I learned so much.',
   },
   {
     name: 'Anna White',

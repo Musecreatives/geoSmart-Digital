@@ -24,8 +24,13 @@
 }
 
 .text_content ul li {
-    list-style-type: circle !important;
     font-size: .9rem;
+}
+
+.checkIcon {
+    color: #f8f8f8;
+    font-size: 1rem;
+    margin-right: 1rem;
 }
 
 .img_content {

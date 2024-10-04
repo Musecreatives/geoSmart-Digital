@@ -5,7 +5,7 @@ const WhatYouLearn = (
         array
     }
 ) => {
-    return(
+    return (
         <div className={styles.container}>
             <h2>What you&apos;ll learn</h2>
             <p>Our Computer Networking Training program covers essential topics such as:</p>
@@ -13,9 +13,11 @@ const WhatYouLearn = (
                 {
                     array.map((item, index) => {
                         return <li key={index}>
-                                <div className={styles.heading}><h4>{item.title}</h4></div>
-                                <p>{item.desc}</p>
-                            </li>
+                            <div className={styles.heading}>
+                                <h4>{item.title}</h4>
+                            </div>
+                            <p>{item.desc}</p>
+                        </li>
                     })
                 }
             </ul>

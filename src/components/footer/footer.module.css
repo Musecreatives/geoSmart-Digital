@@ -43,8 +43,9 @@
 }
 
 /* Copyright styles */
-.copyrigt {
-    padding: 5px 0;
+.copyright {
+    height: 40px;
+    padding: 10px;
 }
 
 /* Responsive Design */
@@ -83,7 +84,8 @@
     }
 
 
-    .copyrigt {
+    .copyright {
+        height: 40px;
         font-size: 0.8rem; /* Adjust copyright font size */
     }
 

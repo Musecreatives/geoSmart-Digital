@@ -1,12 +1,17 @@
+'use client'; // Required for Next.js client-side rendering
+import { motion } from "framer-motion";
 import Image from "next/image";
-// style
 import styles from "./Benefits.module.css";
-// image
 import ManOnLaptopImage from "../../../../public/assets/imgs/man-on-laptop.png";
 
 const ProgramBenefits = ({ array }) => {
   return (
-    <div className={styles.container}>
+    <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5, duration: 0.8 }}
+        className={styles.container}
+    >
       <div className={styles.text_content}>
         <h2>Benefits</h2>
         <p>Prepare to become a Software Engineer</p>
@@ -15,7 +20,6 @@ const ProgramBenefits = ({ array }) => {
             return (
               <li key={index}>
                 <span className={styles.checkIcon}>
-                  {/* SVG Checkmark */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 16 16"
@@ -38,7 +42,7 @@ const ProgramBenefits = ({ array }) => {
       <div className={styles.img_content}>
         <Image src={ManOnLaptopImage} alt="Man on laptop" fill />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -22,7 +22,7 @@ const CallToActionSection = () => {
           Experienced Instructors, Learn from industry professionals with extensive expertise in their respective fields.
         </p>
         {/* Apply Button with a Link */}
-        <Link href="/apply-now" passHref>
+        <Link href="https://docs.google.com/forms" passHref>
           <button className={styles.applyButton}>
             Apply Now →
           </button>

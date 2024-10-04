@@ -160,7 +160,7 @@
 .aboutManager {
   flex: 1;
   margin-right: 50px;
-  padding-top: 140px;
+  padding-top: 100px;
   color: white;
 }
 
@@ -188,7 +188,6 @@
   color: white;
   background-color: #d52027; /* Initial background color */
   border: 2px solid transparent; /* No border initially */
-  border-radius: 5px; /* Rounded corners */
   cursor: pointer;
   transition: all 0.3s ease; /* Smooth transition for hover/click animations */
 }

@@ -52,6 +52,14 @@
   font-size: 1rem;
 }
 
+.applyNowBtn:hover {
+  padding: 10px 20px;
+  background-color: rgb(5, 3, 3);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
 .imageContent {
   position: relative;
   width: 100%;

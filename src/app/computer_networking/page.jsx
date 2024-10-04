@@ -75,7 +75,6 @@ const computernetworking = () => {
             desc: "Understand the concepts and benefits of network virtualization using technologies like VMware and Hyper-V.",
             icon: nw8
         },
-
     ]
 
     const benefits = [

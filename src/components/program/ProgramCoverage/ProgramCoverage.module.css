@@ -10,6 +10,12 @@
     font-weight: 800;
 }
 
+.icon {
+    color: #f8f8f8;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
 .container ul {
     background-color: #191D1F;
     padding: 50px 50px;

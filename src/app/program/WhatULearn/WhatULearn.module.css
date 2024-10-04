@@ -1,6 +1,8 @@
 .container {
     width: 95%;
     margin: auto;
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Entry animation for the whole container */
 }
 
 .container p {
@@ -13,12 +15,23 @@
     row-gap: 20px;
     flex-wrap: wrap;
     margin-top: 40px;
+    opacity: 0;
+    animation: fadeInUp 1.2s ease-in-out forwards; /* Slight delay for list entry animation */
 }
 
 .container ul li {
     border: 1px solid #928C8C7A;
     width: 240px;
     border-radius: 10px;
+    background-color: white;
+    opacity: 0;
+    animation: scaleIn 1s ease-in-out forwards;
+    animation-delay: 0.2s;
+}
+
+.container ul li:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Elevated shadow on hover */
 }
 
 .heading {
@@ -38,4 +51,20 @@
     .container ul li {
         width: 100%;
     }
+}
+
+/* Keyframes for entrance animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
 }

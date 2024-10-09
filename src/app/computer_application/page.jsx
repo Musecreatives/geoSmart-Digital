@@ -46,6 +46,7 @@ const ComputerApplication = () => {
             bg={CustomBg} 
             programTitle="Computer Application"
             fee="_ _ _ _ _"
+            certificate="Diploma"
             location="Jos, Nigeria"
             startDate="_ _ _ _ _"
             />
@@ -64,7 +65,7 @@ const ComputerApplication = () => {
             <div className={styles.spacing_normal}></div>
             <RequiredSkillLevel />
             <div className={styles.spacing_normal}></div>
-            <ProgramBenefits array={benefits}/>
+            <ProgramBenefits title="Prepare to Become a Computer Application" array={benefits} />
         </main>
     )
 }

@@ -36,7 +36,7 @@ const ValidateCertificate = () => {
             className={styles.inputField}
             value={certificateCode}
             onChange={(e) => setCertificateCode(e.target.value)}
-            placeholder="N9TT-9G0A-BF7Q-RANC"
+            placeholder="240120240005"
             required
           />
           <button type="submit" className={styles.submitButton}>Submit</button>

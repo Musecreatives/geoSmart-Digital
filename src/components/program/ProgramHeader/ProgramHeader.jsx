@@ -3,7 +3,7 @@ import Image from "next/image"; // Use for optimization if using an image elemen
 
 const ProgramHeader = ({
   bg, // New dynamic background prop
-  programTitle = "Software Programming",
+  programTitle = "Software  Engineering",
   certificate = "Training Program",
   fee = "_______",
   duration = "Flexible",

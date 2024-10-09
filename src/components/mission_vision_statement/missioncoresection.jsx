@@ -31,30 +31,14 @@ const MissionVisionSection = () => {
       <section className={`${styles.section} ${isVisible ? styles.fadeUp : ""}`}>
         <div className={styles.contentWrapper}>
           <div className={styles.textWrapper}>
-            <h2 className={styles.heading}>Our Mission Statement</h2>
+            <h2 className={styles.heading}>Who we are?</h2>
             <p className={styles.description}>
-              Figma ipsum component variant main layer. Select connection flows edit fill. Layer horizontal line scale mask. Pen italic flatten list figjam main. Move flatten blur text boolean object distribute main horizontal. Polygon rotate plugin ipsum opacity group layout.
-              Thumbnail export blur style mask. Figjam editor create union duplicate project arrange pen plugin reesizing. Flatten hand duplicate font star strikethrough object device editor. Horizontal inspect link style auto. Strikethrough object image follower star. Duplicate export main horizontal rectangle shadow. Draft distribute underline style undo fill team flatten. Figjam figma device bullet.
+              Geosmart Digital Solutions Ltd. is the consultancy unit of the National Centre for Remote Sensing, Jos.
+              Registered with the corporate affairs commission under the Corporate and Allied Matters decree (1990), Geosmart Digital Solutions was established to meet the dynamics of globalization as well as technological challenges in the effective application of Remote Sensing and Geographic Information System (GIS) in research and development. Geosmart Digital Solutions provides technical consultancy services in Geoinformation/Environmental Research and also organizes practical training programmes for interested professionals in the fields of Environment, Agriculture, Geology, Water Resources, Urban Planning, Surveying and Geoinformatics, cartography amongst others
             </p>
           </div>
           <div className={styles.imageWrapper}>
             <Image src={MissionImage} alt="Mission Image" className={styles.image} />
-          </div>
-        </div>
-      </section>
-
-      {/* Vision Section */}
-      <section className={`${styles.section} ${isVisible ? styles.fadeUp : ""}`}>
-        <div className={`${styles.contentWrapper} ${styles.reverse}`}>
-        <div className={styles.textWrapper}>
-            <h2 className={styles.heading}>Our Vision Statement</h2>
-            <p className={styles.description}>
-              Figma ipsum component variant main layer. Select connection flows edit fill. Layer horizontal line scale mask. Pen italic flatten list figjam main. Move flatten blur text boolean object distribute main horizontal. Polygon rotate plugin ipsum opacity group layout.
-              Thumbnail export blur style mask. Figjam editor create union duplicate project arrange pen plugin reesizing. Flatten hand duplicate font star strikethrough object device editor. Horizontal inspect link style auto. Strikethrough object image follower star. Duplicate export main horizontal rectangle shadow. Draft distribute underline style undo fill team flatten. Figjam figma device bullet.
-            </p>
-          </div>
-          <div className={styles.imageWrapper}>
-            <Image src={VisionImage} alt="Vision Image" width="350px!important" height="300px!important" className={styles.image} />
           </div>
         </div>
       </section>

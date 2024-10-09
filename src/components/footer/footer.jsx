@@ -3,7 +3,7 @@ import Image from "next/image";
 // style
 import styles from "./footer.module.css";
 // image
-import CircleLogo from "../../../public/assets/circle-logo.png";
+import CircleLogo from "../../../public/assets/logo-icon.png";
 
 const Footer = () => {
     return (
@@ -52,8 +52,8 @@ const Footer = () => {
                 <div className={styles.content}>
                     <h4 className={styles.heading}>Email/Phone No.</h4>
                     <div className={styles.body}>
-                        <div>geosmart.ncrs@gmail.com</div>
-                        <div>+2348035998585</div>
+                        <div>geosmart@ncrs.gov.ng</div>
+                        <div>+2348088714963</div>
                     </div>
                 </div>
             </div>

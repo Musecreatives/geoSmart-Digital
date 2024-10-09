@@ -14,7 +14,7 @@ const ContactInfo = () => {
         <img src="/assets/icons/email-icon.png" alt="Email Icon" />
         <div className={styles.textContainer}>
           <p>E-MAIL</p>
-          <strong className={styles.email}>geosmart.ncrs@gmail.com</strong>
+          <strong className={styles.email}>geosmart@ncrs.gov.ng</strong>
         </div>
       </div>
     </div>

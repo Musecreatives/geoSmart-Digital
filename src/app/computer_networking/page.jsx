@@ -111,7 +111,7 @@ const computernetworking = () => {
             <div className={styles.spacing_normal}></div>
             <WhatYouLearn array={whatYouLearn}/>
             <div className={styles.spacing_normal}></div>
-            <ProgramBenefits array={benefits}/>
+            <ProgramBenefits title="Prepare to Become a Computer Networking" array={benefits} />
         </main>
     )
 }

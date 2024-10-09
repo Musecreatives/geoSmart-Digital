@@ -39,7 +39,8 @@ const SoftwareEngineeringPage = () => {
         <main>
             {/* hero */}
             <ProgramHeader
-                bg={CustomBg} 
+                bg={CustomBg}
+                certificate="Training Program"
                 />
             <div className={styles.spacing_300}></div>
             <AboutProgram
@@ -50,7 +51,7 @@ const SoftwareEngineeringPage = () => {
             <div className={styles.spacing_normal}></div>
             <CoursesUnderProgram />
             <div className={styles.spacing_normal}></div>
-            <ProgramBenefits array={benefits} />
+            <ProgramBenefits title="Prepare to Become a Software Engineering" array={benefits} />
         </main>
     )
 }

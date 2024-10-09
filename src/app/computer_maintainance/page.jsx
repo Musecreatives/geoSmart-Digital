@@ -79,6 +79,7 @@ const computermaintainance = () => {
              bg={CustomBg}
             programTitle="Computer Hardware & Maintainance"
             fee="_ _ _ _ _"
+            certificate="Diploma"
             location="Jos, Nigeria"
             startDate="_ _ _ _ _"
             />
@@ -97,7 +98,7 @@ const computermaintainance = () => {
             <div className={styles.spacing_normal}></div>
             <WhatYouLearn array={whatYouLearn}/>
             <div className={styles.spacing_normal}></div>
-            <ProgramBenefits array={benefits}/>
+            <ProgramBenefits title="Prepare to Become a Computer Maintainance & Hardware" array={benefits} />
         </main>
     )
 }

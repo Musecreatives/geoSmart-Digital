@@ -22,7 +22,7 @@ const markerIcon = new L.Icon({
 
 const LeafletMap = () => {
   const [isMounted, setIsMounted] = useState(false); // State to check if mounted
-  const position = [9.8965, 8.8583]; // Latitude and longitude of Jos, Nigeria
+  const position = [9.813929019807658, 8.867250101339023]; // Latitude and longitude of Jos, Nigeria
 
   useEffect(() => {
     setIsMounted(true); // Set mounted state to true on component mount

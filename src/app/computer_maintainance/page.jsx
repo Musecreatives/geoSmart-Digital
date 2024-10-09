@@ -98,7 +98,7 @@ const computermaintainance = () => {
             <div className={styles.spacing_normal}></div>
             <WhatYouLearn array={whatYouLearn}/>
             <div className={styles.spacing_normal}></div>
-            <ProgramBenefits title="Prepare to Become a Computer Maintainance & Hardware" array={benefits} />
+            <ProgramBenefits title="Get ready to Learn Computer Maintainance & Hardware" array={benefits} />
         </main>
     )
 }

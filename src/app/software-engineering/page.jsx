@@ -51,7 +51,7 @@ const SoftwareEngineeringPage = () => {
             <div className={styles.spacing_normal}></div>
             <CoursesUnderProgram />
             <div className={styles.spacing_normal}></div>
-            <ProgramBenefits title="Prepare to Become a Software Engineering" array={benefits} />
+            <ProgramBenefits title="Get ready to Learn Software Engineering" array={benefits} />
         </main>
     )
 }

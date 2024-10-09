@@ -65,7 +65,7 @@ const ComputerApplication = () => {
             <div className={styles.spacing_normal}></div>
             <RequiredSkillLevel />
             <div className={styles.spacing_normal}></div>
-            <ProgramBenefits title="Prepare to Become a Computer Application" array={benefits} />
+            <ProgramBenefits title="Get ready to Learn Computer Application" array={benefits} />
         </main>
     )
 }

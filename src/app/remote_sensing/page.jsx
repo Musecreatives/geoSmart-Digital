@@ -63,7 +63,7 @@ const RemoteSensing = () => {
         </div>
             <div className={styles.spacing_normal}></div>
             <ProgramCoverage array={coverageArray} icons={coverageIcons} />
-            <ProgramBenefits title="Prepare to Become Remote Sensing/GIS" array={benefits} />
+            <ProgramBenefits title="Get ready to Learn Remote Sensing/GIS" array={benefits} />
         </main>
     )
 }

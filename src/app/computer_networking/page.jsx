@@ -10,13 +10,11 @@ import WhatYouLearn from "@/components/program/WhatULearn/WhatULearn";
 import ProgramBenefits from "@/components/program/Benefits/Benefits";
 
 //imgs
-
 import CustomBg from "../../../public/assets/imgs/computer_networking_bg.jpg";
 import icon2 from "../../../public/assets/icons/icon2.png";
 import icon3 from "../../../public/assets/icons/icon3.png";
 import icon4 from "../../../public/assets/icons/icon4.png";
 import icon5 from "../../../public/assets/icons/icon5.png";
-
 import nw1 from "../../../public/assets/icons/nw1.png";
 import nw2 from "../../../public/assets/icons/nw2.png";
 import nw3 from "../../../public/assets/icons/nw3.png";

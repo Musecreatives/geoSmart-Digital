@@ -52,6 +52,7 @@ const MobileNav = () => {
                                 <li onClick={handleMenu}><Link href="/computer_networking" className={styles.link}>Computer Networking</Link></li>
                                 <li onClick={handleMenu}><Link href="/remote_sensing" className={styles.link}>Remote Sensing/GIS</Link></li>
                                 <li onClick={handleMenu}><Link href="/software-engineering" className={styles.link}>Software Engineering</Link></li>
+                                <li> <Link className={styles.link} href="/validate">Verify Certificate</Link></li>
                             </ul>
                         </li>
                         <li onClick={handleMenu}><Link href="/contact" className={styles.link}>Contact Us</Link></li>

@@ -68,11 +68,12 @@ const HomePage = () => {
                     <motion.li whileHover={{ scale: 1.1 }} className={styles.logo2}>
                         <Image src={SpaceXLogo} alt="SpaceX Logo" width={150} height={100} />
                     </motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }} className={styles.logo4}>
-                        <Image src={NasaLogo} alt="Nasa Logo" width={150} height={100} />
-                    </motion.li>
+                 
                     <motion.li whileHover={{ scale: 1.1 }} className={styles.logo5}>
                         <Image src={NGLogo} alt="Nigeria Logo" width={150} height={100} />
+                    </motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }} className={styles.logo4}>
+                        <Image src={NasaLogo} alt="Nasa Logo" width={150} height={100} />
                     </motion.li>
                 </ul>
             </motion.div>

@@ -72,27 +72,27 @@ const AboutPage = () => {
                     ))}
                 </div>
             </div>
-             {/* Why Choose Geosmart Section */}
-      <section className={styles.sectionGeo}>
-        <div className={styles.contentWrapperGeo}>
-          <div className={styles.imageWrapperGeo}>
-            <Image src={WhyChooseImage} alt="Why Choose GeoSmart Digital" className={styles.imageGeo} />
-            <Image src={WhyChooseImage} alt="Why Choose GeoSmart Digital" className={styles.imageGeo2} />
-          </div>
-          <div className={styles.textWrapperGeo}>
-            <h2 className={styles.headingGeo}>Why Choose GeoSmart Digital</h2>
-            <p className={styles.descriptionGeo}>
-              Our mission is to provide cutting-edge solutions to foster growth and digital transformation across industries, ensuring that businesses can reach their full potential in the digital age.
-            </p>
-          </div>
-        </div>
-      </section>
+            {/* Why Choose Geosmart Section */}
+            <section className={styles.sectionGeo}>
+                <div className={styles.contentWrapperGeo}>
+                    <div className={styles.imageWrapperGeo}>
+                        <Image src={WhyChooseImage} alt="Why Choose GeoSmart Digital" className={styles.imageGeo} />
+                        <Image src={WhyChooseImage} alt="Why Choose GeoSmart Digital" className={styles.imageGeo2} />
+                    </div>
+                    <div className={styles.textWrapperGeo}>
+                        <h2 className={styles.headingGeo}>Why Choose GeoSmart Digital</h2>
+                        <p className={styles.descriptionGeo}>
+                            Our mission is to provide cutting-edge solutions to foster growth and digital transformation across industries, ensuring that businesses can reach their full potential in the digital age.
+                        </p>
+                    </div>
+                </div>
+            </section>
             {/* vission and mission statement */}
             <MissionCoreSection />
             {/* manager section */}
             <div className={styles.managerContainer}>
                 <div className={styles.managerImgContainer}>
-                    <Image src={ManagerImg} alt="Dr. Kehinde Ogunmola" fill />
+                    <Image src={ManagerImg} alt="Dr. Kehinde Ogunmola" width={400} height={305} className={styles.m_img} />
                 </div>
                 <div className={styles.aboutManager}>
                     <div className={styles.heading}>
@@ -105,6 +105,7 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
+
             {/* Mission and Vision */}
             {/* <MissionVisionSlider /> */}
         </div>

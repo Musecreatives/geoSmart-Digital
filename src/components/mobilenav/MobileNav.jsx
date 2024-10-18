@@ -20,7 +20,9 @@ const MobileNav = () => {
             {/* logo and hamburger - head */}
             <div className={styles.logo_hamburger_container}>
                 <div className={styles.logo_wrapper}>
-                    <Image src={Logo} alt="ncrs logo" fill />
+                    <a href="/">
+                        <Image src={Logo} alt="ncrs logo" fill />
+                    </a>
                 </div>
                 <div className={styles.hamburger_wrapper} onClick={handleMenu}>
                     {isMenuOpen ? (
@@ -53,8 +55,9 @@ const MobileNav = () => {
                                 <li onClick={handleMenu}><Link href="/remote_sensing" className={styles.link}>Remote Sensing/GIS</Link></li>
                                 <li onClick={handleMenu}><Link href="/software-engineering" className={styles.link}>Software Engineering</Link></li>
                             </ul>
-                            <li> <Link className={styles.link} href="/validate">Verify Certificate</Link></li>
                         </li>
+                        <li onClick={handleMenu}><Link href="/validate" className={styles.link}>Verify Certificate</Link></li>
+                        <li onClick={handleMenu}><Link href="" className={styles.link}>Apply Now</Link></li>
                         <li onClick={handleMenu}><Link href="/contact" className={styles.link}>Contact Us</Link></li>
                     </ul>
                 </div>
@@ -64,3 +67,4 @@ const MobileNav = () => {
 };
 
 export default MobileNav;
+

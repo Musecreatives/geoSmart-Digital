@@ -27,7 +27,7 @@ const ValidateCertificate = () => {
       });
 
       const data = await response.json();
-
+      console.log(data);
       if (response.ok) {
         // On successful validation, navigate to the success page and pass data
         router.push(`/validate/success?title=${data.title}&name=${data.name}&certificate_id=${data.certificate_id}&date_awarded=${data.date_awarded}`);

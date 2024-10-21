@@ -1,32 +1,32 @@
-import { NextResponse } from "next/server";
+import { NextResponse } from 'next/server';
 
-export async function POST(req) {
-    const { certificateCode } = await req.json();
-    console.log("Certificate Code:", certificateCode); // Logging input
-  
-    try {
-      const response = await fetch("https://ncrs-backend.onrender.com/api/v1/certification/add-certificate", {
-        method: "POST", // Verify correct method
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ certificate_id: certificateCode,}), // Check for expected data
-      });
-  
-    //   console.log("Response Status:", response.status); // Log response status
-    //   console.log("Response:", response); // Log entire response object
-    //   console.log("Response Text:", await response.text()); // Log response text
-      
-      if (response.ok) {
-        const data = await response.json();
-        console.log("Data:", data); // Log parsed data
-        return NextResponse.json(data);
-      } else {
-        return NextResponse.json({ message: "Invalid certificate code" }, { status: 400 });
-      }
-    } catch (error) {
-      console.error("Server Error:", error); // Log error details
-      return NextResponse.json({ message: "Server error" }, { status: 500 });
+export async function GET(request) {
+    const { searchParams } = new URL(request.url);
+    const certId = searchParams.get('cert_id');
+
+    if (!certId) {
+        return NextResponse.json({ message: 'Certificate ID is required' }, { status: 400 });
     }
-  }
-  
+
+    try {
+        const response = await fetch(`https://ncrs-backend.onrender.com/api/v1/certification/check-verlidity?cert_id=${certId}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                // Add any necessary authorization headers if required
+            },
+        });
+
+        if (!response.ok) {
+            // Handle errors from the backend API 
+            console.error('Backend API Error:', response.status, await response.text());
+            return NextResponse.json({ message: 'Invalid certificate code' }, { status: 400 });
+        }
+
+        const data = await response.json();
+        return NextResponse.json(data);
+    } catch (error) {
+        console.error('Server Error:', error);
+        return NextResponse.json({ message: 'Server error' }, { status: 500 });
+    }
+}

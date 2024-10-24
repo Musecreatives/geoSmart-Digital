@@ -9,16 +9,17 @@ const ValidateCertificate = () => {
     const [certificateCode, setCertificateCode] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
-    const [validationResult, setValidationResult] = useState(null); // Store the result
+    const [validationResult, setValidationResult] = useState(null); 
     const router = useRouter(); 
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true);
         setError(null);
-        setValidationResult(null); // Clear previous result
+        setValidationResult(null); 
 
         try {
+          // Correct the API endpoint
           const response = await fetch(`/api/validate?cert_id=${certificateCode}`, {
             method: 'GET',
             headers: {
@@ -28,8 +29,8 @@ const ValidateCertificate = () => {
 
             if (response.ok) {
                 const data = await response.json();
-                console.log('Certificate Validation Data:', data); // Log the API response
-                setValidationResult(data); // Set the result for display
+                console.log('Certificate Validation Data:', data); 
+                setValidationResult(data); 
             } else {
                 const errorData = await response.json();
                 setError(errorData.message || 'Invalid certificate code');
@@ -67,14 +68,11 @@ const ValidateCertificate = () => {
 
                 {error && <p className={styles.errorMessage}>{error}</p>}
 
-                {/* Display the validation result if available */}
                 {validationResult && (
                     <div>
                         <h2>Validation Result:</h2>
-                        {/* Display relevant information from validationResult */}
                         <p>Status: {validationResult.status || 'Unknown'}</p>
                         <p>Message: {validationResult.message || 'No message'}</p>
-                        {/* ... add more details from validationResult if needed ... */}
                     </div>
                 )}
             </div>

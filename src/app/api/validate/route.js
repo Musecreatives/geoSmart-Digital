@@ -13,12 +13,10 @@ export async function GET(request) {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
-                // Add any necessary authorization headers if required
             },
         });
 
         if (!response.ok) {
-            // Handle errors from the backend API 
             console.error('Backend API Error:', response.status, await response.text());
             return NextResponse.json({ message: 'Invalid certificate code' }, { status: 400 });
         }

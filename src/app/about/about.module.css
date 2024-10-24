@@ -142,22 +142,20 @@
   margin-top: 60px;
   background-color: #102333;
 }
-
 .managerImgContainer {
   flex: 1;
-  height: 400px; /* Define the height for the container */
-  width: 400px; /* Define the width for the container */
+  height: 90%;
+  width: 600px;
   margin-left: 100px;
-  margin-top: 100px;
-  border-radius: 15px; /* Add border-radius to the image container */
+  border-radius: 15px; 
   overflow: hidden; ;
 }
 
 .m_img {
-  width: 80%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image fits the container proportionally */
-  border-radius: 15px;
+  width: 90%;
+  height: 50%;
+  object-fit: cover; 
+  border-radius: 5px;
 }
 
 .aboutManager {

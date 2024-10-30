@@ -13,12 +13,38 @@ const SuccessPage = () => {
   const dateAwarded = searchParams.get("date_awarded");
 
   return (
-    <div className={styles.successContainer}>
-      <h1>Certificate Validation Successful</h1>
-      <p><strong>Title:</strong> {title}</p>
-      <p><strong>Name:</strong> {name}</p>
-      <p><strong>Certificate ID:</strong> {certificateId}</p>
-      <p><strong>Date Awarded:</strong> {dateAwarded}</p>
+    <div className={styles.container}>
+      <h1 className={styles.heading}>Certificate Valid</h1>
+      <p className={styles.subheading}>Your Request has been processed successfully.</p>
+      <div className={styles.details}>
+        <div>
+          <span>Title of Certificate:</span>
+          <span>{certificateDetails.title}</span>
+        </div>
+        <div>
+          <span>Certification ID:</span>
+          <span>{certificateDetails.id}</span>
+        </div>
+        <div>
+          <span>Name of Awardee:</span>
+          <span>{certificateDetails.awardee}</span>
+        </div>
+        <div>
+          <span>Status:</span>
+          <span>{certificateDetails.status}</span>
+        </div>
+        <div>
+          <span>Programme:</span>
+          <span>{certificateDetails.programme}</span>
+        </div>
+        <div>
+          <span>Date Awarded:</span>
+          <span>{certificateDetails.date}</span>
+        </div>
+      </div>
+      <a href="/" className={styles.homeButton}>
+        Go Back to Home
+      </a>
     </div>
   );
 };

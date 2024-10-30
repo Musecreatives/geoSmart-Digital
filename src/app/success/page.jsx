@@ -12,7 +12,7 @@ const SuccessPage = () => {
     title: searchParams.get("title"),
     id: searchParams.get("certificate_id"),
     awardee: searchParams.get("name"),
-    status: "Verified", // Assuming the certificate is verified
+    status: searchParams.get("status"), // Assuming the certificate is verified
     programme: "", // Add programme if available
     date: searchParams.get("date_awarded"),
   };

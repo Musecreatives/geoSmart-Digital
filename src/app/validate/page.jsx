@@ -21,10 +21,10 @@ const ValidateCertificate = () => {
       const certDetails = await checkCert(certificateCode);
 
       if (certDetails && certDetails.status === 200) {
-        const { title, name, certificate_id, date_awarded } = certDetails.data.userCertificate;
-      
+        const { title, name, certificate_id, date_awarded, status } = certDetails.data.userCertificate;
+
         router.push(
-          `/success?title=${encodeURIComponent(title)}&name=${encodeURIComponent(name)}&certificate_id=${encodeURIComponent(certificate_id)}&date_awarded=${encodeURIComponent(date_awarded)}`
+          `/success?title=${encodeURIComponent(title)}&name=${encodeURIComponent(name)}&certificate_id=${encodeURIComponent(certificate_id)}&date_awarded=${encodeURIComponent(date_awarded)}&status=${encodeURIComponent(status)}`
         );
       }
       else if (certDetails && certDetails.status === 400) {

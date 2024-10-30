@@ -1,19 +1,65 @@
-/* success.module.css */
+/* src/app/success/success.module.css */
 .container {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .details {
-    margin: 20px 0;
-    text-align: left;
-  }
-  
-  .homeButton {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-  }
-  
+  text-align: center;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  font-size: 1.25rem;
+  color: #555;
+  margin: 1rem 0;
+}
+
+.details {
+  text-align: left;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  display: table; /* Use table layout for better alignment */
+  width: 100%; /* Make table take full width */
+}
+
+.details > div {
+  display: table-row; /* Each detail as a row */
+}
+
+.details > div > span {
+  display: table-cell; /* Label and value as cells */
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd; /* Add a subtle border */
+}
+
+.details > div > span:first-child {
+  text-align: left; /* Align labels to the left */
+  font-weight: bold; /* Make labels bold */
+  width: 150px; /* Fix label width */
+}
+
+.details > div > span:last-child {
+  text-align: right; /* Align values to the right */
+}
+
+.homeButton {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none; /* Remove default link underline */
+}

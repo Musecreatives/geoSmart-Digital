@@ -10,49 +10,30 @@ const ValidateCertificate = () => {
   const [certificateCode, setCertificateCode] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [validationResult, setValidationResult] = useState(null);
   const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
     setError(null);
-    setValidationResult(null);
-    // Not usable
-    // try {
-    //   // Correct the API endpoint
-    //   const response = await fetch(`/api/validate?cert_id=${certificateCode}`, {
-    //     method: 'GET',
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //     }
-    // });
-
-    //     if (response.ok) {
-    //         const data = await response.json();
-    //         console.log('Certificate Validation Data:', data);
-    //         setValidationResult(data);
-    //     } else {
-    //         const errorData = await response.json();
-    //         setError(errorData.message || 'Invalid certificate code');
-    //     }
-    // } catch (error) {
-    //     setError('Server error');
-    // } finally {
-    //     setIsLoading(false);
-    // }
-    /*end*/
 
     try {
       const certDetails = await checkCert(certificateCode);
 
-      if (certDetails && certDetails.status == 200) {
-        setValidationResult(certDetails.data.userCertificate);
-      } else if (certDetails && certDetails.status == 400) {
+      if (certDetails && certDetails.status === 200) {
+        const { title, name, certificate_id, date_awarded } = certDetails.data.userCertificate;
+      
+        router.push(
+          `/success?title=${encodeURIComponent(title)}&name=${encodeURIComponent(name)}&certificate_id=${encodeURIComponent(certificate_id)}&date_awarded=${encodeURIComponent(date_awarded)}`
+        );
+      }
+      else if (certDetails && certDetails.status === 400) {
         setError(certDetails.data.msg);
       } else {
-        setError(certDetails.data.msg || "An error occured, try again");
+        setError(certDetails.data.msg || "An error occurred, try again.");
       }
+    } catch (err) {
+      setError("An unexpected error occurred.");
     } finally {
       setIsLoading(false);
     }
@@ -66,9 +47,7 @@ const ValidateCertificate = () => {
         </Link>
 
         <h1 className={styles.heading}>Validate Certificate</h1>
-        <p className={styles.subheading}>
-          Enter the certificate validation code
-        </p>
+        <p className={styles.subheading}>Enter the certificate validation code</p>
 
         <form onSubmit={handleSubmit} className={styles.form}>
           <input
@@ -89,14 +68,6 @@ const ValidateCertificate = () => {
         </form>
 
         {error && <p className={styles.errorMessage}>{error}</p>}
-
-        {validationResult && (
-          <div>
-            <h2>Validation Result:</h2>
-            <p>Status: {validationResult.status || "Unknown"}</p>
-            <p>Message: {validationResult.title || "No message"}</p>
-          </div>
-        )}
       </div>
     </div>
   );

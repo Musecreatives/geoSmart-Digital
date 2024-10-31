@@ -7,3 +7,10 @@ const nextConfig = {
 
 
 export default nextConfig;
+
+
+// next.config.js
+module.exports = {
+  target: 'serverless',
+  // other configurations if any
+}

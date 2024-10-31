@@ -40,7 +40,7 @@ const HeroSlider = () => {
               <button className={styles.applyNowBtn}>Apply Now</button>
             </div>
             <div className={styles.imageContent}>
-              <Image src="/assets/imgs/slide_1.jpg" alt="Slide 1" layout="fill" objectFit="cover" />
+              <Image src="/assets/imgs/slide_1.jpg" alt="Slide 1" objectFit="cover" fill />
             </div>
           </div>
 

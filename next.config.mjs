@@ -6,11 +6,7 @@ const nextConfig = {
 };
 
 
-export default nextConfig;
-
-
-// next.config.js
-module.exports = {
+export default {
   target: 'serverless',
-  // other configurations if any
+  // other configurations...
 }

@@ -3,7 +3,7 @@
 
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import styles from "./Success.module.css";
+import styles from "./success.module.css";
 
 const SuccessPage = () => {
   const searchParams = useSearchParams();

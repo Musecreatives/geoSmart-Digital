@@ -6,7 +6,4 @@ const nextConfig = {
 };
 
 
-export default {
-  target: 'serverless',
-  // other configurations...
-}
+export default nextConfig;

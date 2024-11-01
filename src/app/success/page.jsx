@@ -12,6 +12,16 @@ const SuccessPage = () => {
   const certificateId = searchParams.get("certificate_id");
   const dateAwarded = searchParams.get("date_awarded");
 
+  // Create an object to store certificate details
+  const certDetails = {
+    title: title, // Use the extracted title from search params
+    id: certificateId, // Use the extracted ID from search params
+    awardee: name, // Use the extracted name from search params
+    status: "Issued", // Assuming "Issued" is a default status
+    programme: " ", // Replace with the actual program name 
+    date: dateAwarded, // Use the extracted date from search params
+  };
+
   return (
     <div className={styles.container}>
       <h1 className={styles.heading}>Certificate Valid</h1>
@@ -19,27 +29,27 @@ const SuccessPage = () => {
       <div className={styles.details}>
         <div>
           <span>Title of Certificate:</span>
-          <span>{certificateDetails.title}</span>
+          <span>{certDetails.title}</span>
         </div>
         <div>
           <span>Certification ID:</span>
-          <span>{certificateDetails.id}</span>
+          <span>{certDetails.id}</span>
         </div>
         <div>
           <span>Name of Awardee:</span>
-          <span>{certificateDetails.awardee}</span>
+          <span>{certDetails.awardee}</span>
         </div>
         <div>
           <span>Status:</span>
-          <span>{certificateDetails.status}</span>
+          <span>{certDetails.status}</span>
         </div>
         <div>
           <span>Programme:</span>
-          <span>{certificateDetails.programme}</span>
+          <span>{certDetails.programme}</span>
         </div>
         <div>
           <span>Date Awarded:</span>
-          <span>{certificateDetails.date}</span>
+          <span>{certDetails.date}</span>
         </div>
       </div>
       <a href="/" className={styles.homeButton}>

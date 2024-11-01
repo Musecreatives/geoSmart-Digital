@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* You can also add the favicon here, though it’s often handled in metadata */}
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/logo-icon.png" />
       </head>
       <body className={poppins.className}>
         {/* Navigation for landing pages */}

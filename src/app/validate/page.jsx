@@ -30,7 +30,7 @@ const ValidateCertificate = () => {
       else if (certDetails && certDetails.status === 400) {
         setError(certDetails.data.msg);
       } else {
-        setError(certDetails.data.msg || "An error occurred, try again.");
+        setError(certDetails.data.msg || "An error occurred, try again.");n
       }
     } catch (err) {
       setError("An unexpected error occurred.");

@@ -20,17 +20,19 @@ const ValidateCertificate = () => {
     try {
       const certDetails = await checkCert(certificateCode);
 
+      console.log(certDetails);
+
       if (certDetails && certDetails.status === 200) {
-        const { title, name, certificate_id, date_awarded, status } = certDetails.data.userCertificate;
+        const { title, fullname, cert_id, date_issued, status } = certDetails.data;
 
         router.push(
-          `/success?title=${encodeURIComponent(title)}&name=${encodeURIComponent(name)}&certificate_id=${encodeURIComponent(certificate_id)}&date_awarded=${encodeURIComponent(date_awarded)}&status=${encodeURIComponent(status)}`
+          `/success?title=${encodeURIComponent(title)}&name=${encodeURIComponent(fullname)}&certificate_id=${encodeURIComponent(cert_id)}&date_awarded=${encodeURIComponent(Date(date_issued))}&status=${encodeURIComponent(status)}`
         );
       }
       else if (certDetails && certDetails.status === 400) {
         setError(certDetails.data.msg);
       } else {
-        setError(certDetails.data.msg || "An error occurred, try again.");n
+        setError(certDetails.data.msg || "An error occurred, try again.");
       }
     } catch (err) {
       setError("An unexpected error occurred.");

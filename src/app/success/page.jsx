@@ -48,11 +48,11 @@ const SuccessPage = () => {
         </div>
         <div>
           <span>Programme:</span>
-          <span>{Dateformater(certDetails.programme)}</span>
+          <span>{certDetails.programme}</span>
         </div>
         <div>
           <span>Date Awarded:</span>
-          <span>{certDetails.date}</span>
+          <span>{Dateformater(certDetails.date)}</span>
         </div>
       </div>
       <a href="/" className={styles.homeButton}>

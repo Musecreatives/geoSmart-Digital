@@ -20,6 +20,8 @@ const ValidateCertificate = () => {
     try {
       const certDetails = await checkCert(certificateCode);
 
+      console.log(certDetails);
+
 
       if (certDetails && certDetails.status === 200) {
         const { title, fullname, cert_id, date_issued, status } = certDetails.data;

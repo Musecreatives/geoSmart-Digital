@@ -25,7 +25,7 @@ const ValidateCertificate = () => {
         const { title, fullname, cert_id, program, date_issued, status } = certDetails.data;
 
         router.push(
-          `/success?title=${encodeURIComponent(title)}&name=${encodeURIComponent(fullname)}program=${encodeURIComponent(program)}&certificate_id=${encodeURIComponent(cert_id)}&date_awarded=${encodeURIComponent(Date(date_issued))}&status=${encodeURIComponent(status)}`
+          `/success?title=${encodeURIComponent(title)}&name=${encodeURIComponent(fullname)}&program=${encodeURIComponent(program)}&certificate_id=${encodeURIComponent(cert_id)}&date_awarded=${encodeURIComponent(Date(date_issued))}&status=${encodeURIComponent(status)}`
         );
       }
       else if (certDetails && certDetails.status === 400) {

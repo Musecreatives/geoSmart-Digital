@@ -12,6 +12,7 @@ const SuccessPage = () => {
   const certificateId = searchParams.get("certificate_id");
   const dateAwarded = searchParams.get("date_awarded");
   const status = searchParams.get("status");
+  const program = searchParams.get("program");
 
   // Create an object to store certificate details
   const certDetails = {
@@ -19,7 +20,7 @@ const SuccessPage = () => {
     id: certificateId, // Use the extracted ID from search params
     awardee: name, // Use the extracted name from search params
     status: status, // Assuming "Issued" is a default status
-    programme: " ", // Replace with the actual program name 
+    programme: program, // Replace with the actual program name 
     date: dateAwarded, // Use the extracted date from search params
   };
 

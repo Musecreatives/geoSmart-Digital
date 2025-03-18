@@ -3,6 +3,7 @@
 
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
+import Dateformater from "../../logic/Dateformater";
 import styles from "./success.module.css";
 
 const SuccessPage = () => {
@@ -47,7 +48,7 @@ const SuccessPage = () => {
         </div>
         <div>
           <span>Programme:</span>
-          <span>{certDetails.programme}</span>
+          <span>{Dateformater(certDetails.programme)}</span>
         </div>
         <div>
           <span>Date Awarded:</span>
